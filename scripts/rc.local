@@ -19,11 +19,12 @@ fi
 
 sleep 15
 
-/home/pi/enormousFM/scripts/start-jack.sh
+/home/pi/enormousFM/scripts/start.sh
+#/home/pi/enormousFM/scripts/start-jack.sh
 
-sleep 10
+#sleep 10
 
-/home/pi/enormousFM/scripts/start-pd.sh
+#/home/pi/enormousFM/scripts/start-pd.sh
 
 sleep 5
 
