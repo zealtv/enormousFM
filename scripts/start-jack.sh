@@ -2,7 +2,9 @@
 #not running on pi zero raspbian lite
 #sudo service ntp stop
 sudo service triggerhappy stop
-sudo service dbus stop
+
+# the below was hanging on pi4 bookworm
+#sudo service dbus stop
 
 #not running on pi zero raspbian lite
 #sudo killall console-kit-daemon
@@ -10,7 +12,7 @@ sudo service dbus stop
 ## Only needed when Jack2 is compiled with D-Bus support
 #export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket
 
-# the below was hanging on pi4 bookworm
+
 #sudo mount -o remount,size=128M /dev/shm
 
 #killall gvfsd
@@ -19,7 +21,7 @@ sudo service dbus stop
 
 ## Uncomment if you'd like to disable the network adapter completely
 #echo -n "1-1.1:1.0" | sudo tee /sys/bus/usb/drivers/smsc95xx/unbind
-echo -n performance | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+#echo -n performance | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
 # get available soundcards using cat /proc/asound/cards
 # edit the -dhw: command below as needed
