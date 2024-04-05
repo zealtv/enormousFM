@@ -29,7 +29,7 @@
 #X obj 125 369 noise~;
 #X msg 247 388 \; pd dsp 1;
 #X obj 247 357 loadbang;
-#X obj 125 393 *~ 0.025;
+#X obj 125 393 *~ 0.0025;
 #X connect 0 0 1 0;
 #X connect 1 0 10 0;
 #X connect 2 0 9 0;
