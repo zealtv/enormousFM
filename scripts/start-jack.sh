@@ -1,7 +1,8 @@
 #!/bin/bash
+
 #not running on pi zero raspbian lite
 #sudo service ntp stop
-sudo service triggerhappy stop
+#sudo service triggerhappy stop
 
 # the below was hanging on pi4 bookworm
 #sudo service dbus stop
