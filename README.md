@@ -66,7 +66,7 @@ sudo make install
 ## Install this repo
 ```
 cd ~
-git clone https://github.com/zealtv/enormousFM
+git clone https://github.com/zealtv/enormousFM.git
 cd ./enormousFM
 
 ```
