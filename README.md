@@ -67,7 +67,15 @@ sudo make install
 ```
 cd ~
 git clone https://github.com/zealtv/enormousFM.git
-cd ./enormousFM
+
+```
+
+## Configure soundcards
+```
+aplay -l
+# determine soundcard name and edit start-jack.sh if required
+# ie 
+jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 22050 -s &
 
 ```
 
