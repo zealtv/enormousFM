@@ -17,11 +17,11 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-sleep 10
+sleep 15
 
 /home/pi/enormousFM/scripts/start-jack.sh
 
-sleep 15
+sleep 10
 
 /home/pi/enormousFM/scripts/start-pd.sh
 
