@@ -17,7 +17,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-sleep 5
+sleep 10
 
 /home/pi/enormousFM/scripts/start-jack.sh
 
