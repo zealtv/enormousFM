@@ -27,5 +27,5 @@ sudo service triggerhappy stop
 # edit the -dhw: command below as needed
 
 # Start JACK!
-jackd -P70 -p16 -t2000 -d alsa -hw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &
+jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &
 exit
