@@ -29,7 +29,7 @@
 # edit the -dhw: command below as needed
 
 sleep 5
-su pi -c 'jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &'
+jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &
 sleep 10
 
 
@@ -38,6 +38,6 @@ sleep 10
 
 # PUREDATA
 
-su pi -c 'pd -nogui -jack /home/pi/enormousFM/_MAIN.pd &'
+pd -nogui -jack /home/pi/enormousFM/_MAIN.pd &
 
 exit
