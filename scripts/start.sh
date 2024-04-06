@@ -31,7 +31,6 @@
 sleep 5
 
 #Running Jack at 22050khz
-#jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &
 jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 22050 -s &
 
 # leave enough time for jack to start before launching PD
