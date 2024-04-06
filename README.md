@@ -1,7 +1,7 @@
 # enormousFM
 ## The Enormous Radio Project
 
-A Raspberry Pi and Arduino based framework for networked multichannel sound, light, and motion using [Pure Data](https://puredata.info) and [bop](https://github.com/zealtv/bop). 
+A Raspberry Pi and Arduino based framework for networked multichannel sound, light, and motion.  
 
 ![enormous node diagram](enormous-node.svg)
 
@@ -9,6 +9,8 @@ A Raspberry Pi and Arduino based framework for networked multichannel sound, lig
 ## puredata 0.54 vanilla 
 
 Runs logic, audio duties, OSC.  Communicates to arduino via python helper.
+Leverages the [bop](https://github.com/zealtv/bop) library. 
+
 
 ## python3
 
