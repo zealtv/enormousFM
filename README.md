@@ -4,13 +4,13 @@ The Enormous Radio Project
 ![enormous node diagram](enormous-node.svg)
 
 
-## puredata
+## puredata 0.54 vanilla 
 
 Runs logic, audio duties, OSC.  Communicates to arduino via python helper.
 
-## python
+## python3
 
-Provides admin services - updating, rebooting, shutdown.  Forwards OSC messages between arduino and puredata.
+Provides admin services - updating, rebooting, shutdown. iInterfacing with arduino and OSC forwarding between arduino and puredata.
 
 ### Requires:
  - todo....
@@ -18,7 +18,7 @@ Provides admin services - updating, rebooting, shutdown.  Forwards OSC messages 
 
 ## Arduino
 
-Reads distance sensor and controls lights and stepper motor.  Communicates with python via SLIP encoded OSC over serial USB.
+Reads distance sensor and controls lights and stepper motor.  Communicates with python via SLIP encoded OSC over USB serial.
 
 ### Requires:
 - https://github.com/CNMAT/OSC
