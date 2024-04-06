@@ -63,19 +63,21 @@ make
 sudo make install
 ```
 
-## Install this repo
+## Install project code
 ```
+# goto home directory
 cd ~
+
+# clone this repo
 git clone https://github.com/zealtv/enormousFM.git
 
-```
+# goto scripts directory
+cd ./enormousFM/scripts
 
-## Configure soundcards
-```
-aplay -l
-# determine soundcard name and edit start-jack.sh if required
-# ie 
-jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 22050 -s &
+# install rc.local autostart file and reboot
+sudo ./update.sh
+
+# pi should reboot with jack, python, and puredata running
 
 ```
 
