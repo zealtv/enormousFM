@@ -17,6 +17,6 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-/home/pi/enormousFM/scripts/start.sh
+su pi -c '/home/pi/enormousFM/scripts/start.sh'
 
 exit 0
