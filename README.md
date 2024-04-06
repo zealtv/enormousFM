@@ -14,7 +14,8 @@ Leverages the [bop](https://github.com/zealtv/bop) library.
 
 ## python3
 
-Provides admin services - updating, rebooting, shutdown. iInterfacing with arduino and OSC forwarding between arduino and puredata.
+Provides admin services (updating, rebooting, shutdown). 
+Interfaces with arduino and forwards OSC to and from Pure Data.
 
 ### Requires:
  - todo....
