@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# JACK STUFF
+# JACK OPTIMISATION STUFF
 #not running on pi zero raspbian lite
 #sudo service ntp stop
 #sudo service triggerhappy stop
@@ -29,7 +29,12 @@
 # edit the -dhw: command below as needed
 
 sleep 5
-jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &
+
+#Running Jack at 22050khz
+#jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &
+jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 22050 -s &
+
+# leave enough time for jack to start before launching PD
 sleep 10
 
 
