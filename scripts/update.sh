@@ -8,7 +8,7 @@ echo "updating submodules"
 git submodule update --init --recursive
 cd scripts
 echo "copying rc.local"
-./copyrc.sh
+sudo cp ./rc.local /etc/
 echo "rebooting in 5 seconds..."
 sleep 5
 systemctl reboot

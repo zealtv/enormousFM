@@ -18,11 +18,5 @@ if [ "$_IP" ]; then
 fi
 
 /home/pi/enormousFM/scripts/start.sh
-#/home/pi/enormousFM/scripts/start-jack.sh
-
-#sleep 10
-
-#/home/pi/enormousFM/scripts/start-pd.sh
-
 
 exit 0
