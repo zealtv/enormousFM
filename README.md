@@ -1,5 +1,7 @@
 # enormousFM
-The Enormous Radio Project
+## The Enormous Radio Project
+
+A Pi-Based framework for networked multichannel sound, light, and motion using [Pure Data](https://puredata.info) and [bop](https://github.com/zealtv/bop). 
 
 ![enormous node diagram](enormous-node.svg)
 
