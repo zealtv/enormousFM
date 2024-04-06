@@ -28,9 +28,9 @@
 # get available soundcards using cat /proc/asound/cards
 # edit the -dhw: command below as needed
 
-sleep 15
-su pi -c 'jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &'
 sleep 5
+su pi -c 'jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &'
+sleep 10
 
 
 # PYTHON
@@ -38,6 +38,6 @@ sleep 5
 
 # PUREDATA
 
-pd -nogui -jack /home/pi/enormousFM/_MAIN.pd &
+su pi -c 'pd -nogui -jack /home/pi/enormousFM/_MAIN.pd &'
 
 exit
