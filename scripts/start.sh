@@ -29,7 +29,7 @@
 # edit the -dhw: command below as needed
 
 sleep 15
-jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &
+su pi -c 'jackd -P70 -p16 -t2000 -d alsa -dhw:CARD=DigiAMP -p 128 -n 3 -r 22050 -s &'
 sleep 5
 
 
