@@ -70,6 +70,11 @@ sudo make install
 # install pd externals
 sudo apt-get install pd-slip pd-comport
 
+# add externals to local extra folder
+mkdir ~/pd-externals
+cd ~/pd-externals 
+sudo cp /lib/pd/extra/* ./
+sudo chown -R pi ./*
 
 ```
 
