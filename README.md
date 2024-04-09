@@ -11,14 +11,14 @@ A Raspberry Pi and Arduino based framework for networked multichannel sound, lig
 Runs logic, audio duties, OSC.  Communicates to arduino via python helper.
 Leverages the [bop](https://github.com/zealtv/bop) library. 
 
+### Requires
+- pd-comport
+- pd-slip
+
 
 ## python3
 
 Provides admin services (updating, rebooting, shutdown). 
-Interfaces with arduino and forwards OSC to and from Pure Data.
-
-### Requires:
- - todo....
 
 
 ## Arduino
