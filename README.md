@@ -66,6 +66,11 @@ cd ./pure-data/
 ./configure --enable-jack
 make
 sudo make install
+
+# install pd externals
+sudo apt-get install pd-slip pd-comport
+
+
 ```
 
 ## Install project code
