@@ -34,19 +34,19 @@ sleep 5
 jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 22050 -s &
 
 # leave enough time for jack to start before launching PD
-sleep 10
-
+sleep 5
 
 # PYTHON
 # todo
 
 # PUREDATA
-#MACADDRESS=$(cat /sys/class/net/ens1f0/address)
-#STARTTIME is passed in to seed random numbers etc
+MACADDRESS=$(cat /sys/class/net/wlan0/address | tr ':' ' ')
 now=$(date --iso-8601=seconds)
 STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
 
-pd -nogui -jack -open "/home/pi/enormousFM/_MAIN.pd" -send "; STARTTIME $STARTTIME" &
+echo "MAC: $MACADDRESS"
+
+pd -nogui -jack -open "/home/pi/enormousFM/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; MACADDRESS $MACADDRESS" &
 
 exit

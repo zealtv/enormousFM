@@ -26,7 +26,7 @@ Provides admin services (updating, rebooting, shutdown).
 Reads distance sensor and controls lights and stepper motor.  Communicates with python via SLIP encoded OSC over USB serial.
 
 ### Requires:
-- https://github.com/CNMAT/OSC
+- https://github.com/thomasfredericks/MicroOsc
 
 
 # Installation and Setup
