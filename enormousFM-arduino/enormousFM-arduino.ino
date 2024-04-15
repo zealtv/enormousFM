@@ -1,33 +1,14 @@
-/*
-  MicroOsc SLIP example for multiple arguments.
-  By Thomas O Fredericks.
-  2024-01-14
-
-  WHAT IS DOES
-  ======================
-  Example and test code for how to send and receive multiple argument OSC messages with MicroOsc.
-
-  HARDWARE REQUIREMENTS
-  ==================
-  - Any "regular" Arduino.
-
-
-  REQUIRED LIBRARIES
-  ==================
-  - MicroOsc.
-
-  REQUIRED CONFIGURATION
-  ======================
-  - Set the baud of the application receiving the OSC SLIP messages to 115200.
-
-*/
-
 #include <MicroOscSlip.h>
+#include <SharpIR.h>
 
 // THE NUMBER 64 BETWEEN THE < > SYMBOLS  BELOW IS THE MAXIMUM NUMBER OF BYTES RESERVED FOR INCOMMING MESSAGES.
 // MAKE SURE THIS NUMBER OF BYTES CAN HOLD THE SIZE OF THE MESSAGE YOUR ARE RECEIVING IN ARDUINO.
 // OUTGOING MESSAGES ARE WRITTEN DIRECTLY TO THE OUTPUT AND DO NOT NEED ANY RESERVED BYTES.
-MicroOscSlip<64> myMicroOsc(&Serial);  // CREATE AN INSTANCE OF MicroOsc FOR SLIP MESSAGES
+MicroOscSlip<128> myMicroOsc(&Serial);  // CREATE AN INSTANCE OF MicroOsc FOR SLIP MESSAGES
+
+
+SharpIR sensor( SharpIR::GP2Y0A21YK0F, A0 );
+
 
 /********
   SETUP
@@ -38,24 +19,13 @@ void setup() {
 }
 
 /****************
-  myOnOscMessageReceived is triggered when a message is received
+  onReceiveOSC is triggered when a message is received
 *****************/
-void myOnOscMessageReceived(MicroOscMessage& oscMessage) {
+void onReceiveOSC(MicroOscMessage& oscMessage) {
 
   // CHECK THE ADDRESS OF THE OSC MESSAGE
-  if (oscMessage.checkOscAddressAndTypeTags("/echo", "sfi")) {
-
-    char stringArgument[20];
-    const char* stringPointer = oscMessage.nextAsString();
-    snprintf(stringArgument, 20, "%s", stringPointer);
-
-    float floatArgument = oscMessage.nextAsFloat();
-
-    int intArgument = oscMessage.nextAsInt();
-
-    myMicroOsc.sendMessage("/echo", "sfi", stringArgument, floatArgument, intArgument);
-
-  } else if (oscMessage.checkOscAddressAndTypeTags("/echo", "fsi")) {
+  //ECHO FSI
+  if (oscMessage.checkOscAddressAndTypeTags("/echo", "fsi")) {
 
     float floatArgument = oscMessage.nextAsFloat();
 
@@ -67,6 +37,16 @@ void myOnOscMessageReceived(MicroOscMessage& oscMessage) {
 
     myMicroOsc.sendMessage("/echo", "fsi", floatArgument, stringArgument, intArgument);
   }
+
+  // if(oscMessage.checkOscAddressAndTypeTags("/getKnob", "i")){
+  //   checkKnob();
+  // }
+
+  //LED MODE
+
+  //NEEDLE POSITION
+
+
 }
 
 /*******
@@ -74,10 +54,33 @@ void myOnOscMessageReceived(MicroOscMessage& oscMessage) {
 ********/
 void loop() {
 
-  // TRIGGER myOnOscMessageReceived() IF AN OSC MESSAGE IS RECEIVED :
-  myMicroOsc.onOscMessageReceived(myOnOscMessageReceived);
+  // TRIGGER onReceiveOSC() IF AN OSC MESSAGE IS RECEIVED :
+  myMicroOsc.onOscMessageReceived(onReceiveOSC);
 
-  // SEND OSC MESSAGES EVERY 20 MILLISECONDS :
+  checkDistance();
+
+  // runExample();
+}
+
+void checkDistance(){
+    static unsigned long myChronoStart;
+    if (millis() - myChronoStart >= 50) {  // IF XX ms HAVE ELLAPSED
+      myChronoStart = millis();            // RESTART CHRONO
+      int32_t distance = sensor.getDistance();
+      myMicroOsc.sendMessage("/d", "i", distance);
+    }
+}
+
+// void checkKnob(){
+//   knobPos = analogRead(knobPin);
+//   if(knobPos != lastKnobPos){
+//     myMicroOsc.sendMessage("/knob", "i", knobPos);
+//   }
+// }
+
+
+void runExample(){
+    // SEND OSC MESSAGES EVERY 20 MILLISECONDS :
   static unsigned long myChronoStart;
   if (millis() - myChronoStart >= 10) {  // IF XX ms HAVE ELLAPSED
     myChronoStart = millis();            // RESTART CHRONO
