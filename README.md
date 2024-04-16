@@ -23,10 +23,11 @@ Provides admin services (updating, rebooting, shutdown).
 
 ## Arduino
 
-Reads distance sensor and controls lights and stepper motor.  Communicates with python via SLIP encoded OSC over USB serial.
+Reads distance sensor and controls lights and stepper motor.  Communicates with PD via SLIP encoded OSC over USB serial.
 
 ### Requires:
 - https://github.com/thomasfredericks/MicroOsc
+- https://github.com/qub1750ul/Arduino_SharpIR
 
 
 # Installation and Setup

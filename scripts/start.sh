@@ -47,6 +47,6 @@ STARTTIME=$(date -d "$now" +%H%M%S)
 
 echo "MAC: $MACADDRESS"
 
-pd -nogui -jack -open "/home/pi/enormousFM/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; MACADDRESS $MACADDRESS" &
+pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; MACADDRESS $MACADDRESS" &
 
 exit

@@ -1,3 +1,4 @@
+#include <Stepper.h>
 #include <MicroOscSlip.h>
 #include <SharpIR.h>
 
