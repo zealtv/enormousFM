@@ -106,14 +106,14 @@ IR sensor distance in centimeters
 
 
 ## to arduino
-/leds float[10]
+/leds float[10]  
 brightness of LEDS 0.0 - 1.0
 
-/ledsat float
+/ledsat float  
 saturation of leds 0.0 - 1.0
 
-/ledhue float
+/ledhue float  
 hue of leds 0.0 - 1.0
 
-/needle float
+/needle float  
 needle speed
