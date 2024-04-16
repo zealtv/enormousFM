@@ -90,17 +90,25 @@ void loop() {
 
 void checkDistance(){
     static unsigned long myChronoStart;
+    static int32_t lastDistance;
     if (millis() - myChronoStart >= 50) {  // IF XX ms HAVE ELLAPSED
       myChronoStart = millis();            // RESTART CHRONO
       int32_t distance = sensor.getDistance();
-      myMicroOsc.sendMessage("/d", "i", distance);
+      if(distance != lastDistance)
+        myMicroOsc.sendMessage("/d", "i", distance);
+      lastDistance = distance;
     }
 }
 
 
 void setNeedle(float needlePos){
   stepper.setSpeed((int)needlePos);
-  myMicroOsc.sendMessage("/n", "f", needlePos);
+  
+  if(needlePos == 0)
+    stepper.disableOutputs(); 
+  else
+    stepper.enableOutputs(); 
+    
 }
 
 
