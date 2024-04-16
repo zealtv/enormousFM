@@ -101,7 +101,7 @@ sudo ./update.sh
 
 # OSC schema
 ## from arduino
-/d int
+/d int  
 IR sensor distance in centimeters
 
 
