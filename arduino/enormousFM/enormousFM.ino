@@ -3,17 +3,22 @@
 #include <Stepper.h>
 #include <MicroOscSlip.h>
 #include <SharpIR.h>
+#include <FastLED.h>
 
+//LEDs
+#define NUM_LEDS 10
+#define DATA_PIN 3
+CRGB leds[NUM_LEDS];
+int ledSaturation = 0;
+int ledHue = 0;
+
+
+//MOTOR
 // Motor pin definitions:
 #define motorPin1  9     // IN1 on the ULN2003 driver
 #define motorPin2  10     // IN2 on the ULN2003 driver
 #define motorPin3  11     // IN3 on the ULN2003 driver
 #define motorPin4  12     // IN4 on the ULN2003 driver
-
-// Define the AccelStepper interface type: 4 wire motor in half step mode:
-// #define MotorInterfaceType 8
-
-// Initialize with pin sequence IN1-IN3-IN2-IN4
 AccelStepper stepper = AccelStepper(AccelStepper::FULL4WIRE, motorPin1, motorPin3, motorPin2, motorPin4);
 
 // THE NUMBER 64 BETWEEN THE < > SYMBOLS  BELOW IS THE MAXIMUM NUMBER OF BYTES RESERVED FOR INCOMMING MESSAGES.
@@ -21,7 +26,7 @@ AccelStepper stepper = AccelStepper(AccelStepper::FULL4WIRE, motorPin1, motorPin
 // OUTGOING MESSAGES ARE WRITTEN DIRECTLY TO THE OUTPUT AND DO NOT NEED ANY RESERVED BYTES.
 MicroOscSlip<128> myMicroOsc(&Serial);  // CREATE AN INSTANCE OF MicroOsc FOR SLIP MESSAGES
 
-
+//IR SENSOR
 SharpIR sensor( SharpIR::GP2Y0A21YK0F, A0 );
 
 
@@ -33,6 +38,10 @@ void setup() {
   
   // Set the maximum steps per second:
   stepper.setMaxSpeed(1000);
+
+  //set up LEDs
+  FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS);  // GRB ordering is typical
+  FastLED.setBrightness(84);
 }
 
 /****************
@@ -60,7 +69,29 @@ void onReceiveOSC(MicroOscMessage& oscMessage) {
     setNeedle(needlePos);
   }
 
+  //number of args must be the same as NUM_LEDS
+  if(oscMessage.checkOscAddressAndTypeTags("/leds", "ffffffffff")){
+    // if(oscMessage.nextAsFloat() > 0){
+    //   leds[0] = CRGB::Red;
+    // }
+    // else{
+    //   leds[0] = CRGB::Black;
+    // }
 
+    for(int i = 0; i < NUM_LEDS; i++){
+      int brightness = (int)(oscMessage.nextAsFloat() * 255);
+      leds[i] = CHSV(ledHue, ledSaturation, brightness);
+    }
+    FastLED.show();
+  }
+
+  if(oscMessage.checkOscAddressAndTypeTags("/ledsat", "f")){
+    ledSaturation = (int)(oscMessage.nextAsFloat() * 255);
+  }
+  
+  if(oscMessage.checkOscAddressAndTypeTags("/ledhue", "f")){
+    ledHue = (int)(oscMessage.nextAsFloat() * 255);
+  }
 
   // if(oscMessage.checkOscAddressAndTypeTags("/getKnob", "i")){
   //   checkKnob();

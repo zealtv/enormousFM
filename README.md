@@ -29,6 +29,7 @@ Reads distance sensor and controls lights and stepper motor.  Communicates with 
 - https://github.com/thomasfredericks/MicroOsc
 - https://github.com/qub1750ul/Arduino_SharpIR
 - http://www.airspayce.com/mikem/arduino/AccelStepper/
+- https://github.com/FastLED/FastLED
 
 
 # Installation and Setup

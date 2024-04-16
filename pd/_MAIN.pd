@@ -1,4 +1,4 @@
-#N canvas 4 425 503 491 12;
+#N canvas 4 424 891 491 12;
 #X obj 159 232 r osc-in;
 #X obj 159 193 s osc-out;
 #X obj 39 207 dac~;
@@ -27,7 +27,7 @@
 #X restore 158 60 pd OSC-IO;
 #X obj 158 86 s osc-in;
 #X obj 158 34 r osc-out;
-#N canvas 216 195 664 405 ARD-IO 1;
+#N canvas 0 218 664 405 ARD-IO 1;
 #X obj 30 495 oscparse;
 #X obj 38 30 inlet;
 #X obj 47 280 slip/slipenc;
@@ -241,7 +241,18 @@
 #X obj 253 296 < 11;
 #X floatatom 253 320 5 0 0 0 - - - 0;
 #X obj 253 343 change;
-#X obj 276 384 * 500;
+#X obj 256 384 * 500;
+#X msg 313 139 0;
+#X obj 37 37 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 37 37 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 37 37 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 460 291 s to-arduino;
+#X msg 435 159 ledhue \$1;
+#X obj 436 92 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 528 130 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 566 199 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X msg 550 231 leds \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1;
+#X msg 518 164 ledsat \$1;
 #X connect 3 0 6 0;
 #X connect 5 0 4 0;
 #X connect 6 0 2 0;
@@ -257,4 +268,10 @@
 #X connect 19 0 20 0;
 #X connect 20 0 21 0;
 #X connect 21 0 22 0;
-#X connect 22 0 18 0;
+#X connect 23 0 17 0;
+#X connect 28 0 27 0;
+#X connect 29 0 28 0;
+#X connect 30 0 33 0;
+#X connect 31 0 32 0;
+#X connect 32 0 27 0;
+#X connect 33 0 27 0;
