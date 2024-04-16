@@ -8,7 +8,7 @@ A Raspberry Pi and Arduino based framework for networked multichannel sound, lig
 
 ## puredata 0.54 vanilla 
 
-Runs logic, audio duties, OSC.  Communicates to arduino via python helper.
+Runs logic, audio duties, OSC.  Communicates to arduino via pd-comport.
 Leverages the [bop](https://github.com/zealtv/bop) library. 
 
 ### Requires
