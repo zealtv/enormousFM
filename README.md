@@ -101,19 +101,19 @@ sudo ./update.sh
 
 # OSC schema
 ## from arduino
-/knob f
-f: knob value 0. to 1.
-Potentiometer on pin A0
-
-
-/distance f
-f: distance in millimeters
-Analog distance sensor on pin A1
+/d int
+IR sensor distance in centimeters
 
 
 ## to arduino
-/led i
-i: mode
+/leds float[10]
+brightness of LEDS 0.0 - 1.0
 
-/needle f
-f: needle position 0.0 to 1.0
+/ledsat float
+saturation of leds 0.0 - 1.0
+
+/ledhue float
+hue of leds 0.0 - 1.0
+
+/needle float
+needle speed
