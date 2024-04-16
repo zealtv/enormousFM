@@ -1,6 +1,20 @@
+#include <AccelStepper.h>
+#include <MultiStepper.h>
 #include <Stepper.h>
 #include <MicroOscSlip.h>
 #include <SharpIR.h>
+
+// Motor pin definitions:
+#define motorPin1  9     // IN1 on the ULN2003 driver
+#define motorPin2  10     // IN2 on the ULN2003 driver
+#define motorPin3  11     // IN3 on the ULN2003 driver
+#define motorPin4  12     // IN4 on the ULN2003 driver
+
+// Define the AccelStepper interface type: 4 wire motor in half step mode:
+// #define MotorInterfaceType 8
+
+// Initialize with pin sequence IN1-IN3-IN2-IN4
+AccelStepper stepper = AccelStepper(AccelStepper::FULL4WIRE, motorPin1, motorPin3, motorPin2, motorPin4);
 
 // THE NUMBER 64 BETWEEN THE < > SYMBOLS  BELOW IS THE MAXIMUM NUMBER OF BYTES RESERVED FOR INCOMMING MESSAGES.
 // MAKE SURE THIS NUMBER OF BYTES CAN HOLD THE SIZE OF THE MESSAGE YOUR ARE RECEIVING IN ARDUINO.
@@ -15,8 +29,10 @@ SharpIR sensor( SharpIR::GP2Y0A21YK0F, A0 );
   SETUP
 *********/
 void setup() {
-
   Serial.begin(115200);
+  
+  // Set the maximum steps per second:
+  stepper.setMaxSpeed(1000);
 }
 
 /****************
@@ -39,6 +55,13 @@ void onReceiveOSC(MicroOscMessage& oscMessage) {
     myMicroOsc.sendMessage("/echo", "fsi", floatArgument, stringArgument, intArgument);
   }
 
+  if(oscMessage.checkOscAddressAndTypeTags("/needle", "f")){
+    float needlePos = oscMessage.nextAsFloat();
+    setNeedle(needlePos);
+  }
+
+
+
   // if(oscMessage.checkOscAddressAndTypeTags("/getKnob", "i")){
   //   checkKnob();
   // }
@@ -60,6 +83,8 @@ void loop() {
 
   checkDistance();
 
+  
+  stepper.runSpeed();
   // runExample();
 }
 
@@ -72,6 +97,14 @@ void checkDistance(){
     }
 }
 
+
+void setNeedle(float needlePos){
+  stepper.setSpeed((int)needlePos);
+  myMicroOsc.sendMessage("/n", "f", needlePos);
+}
+
+
+
 // void checkKnob(){
 //   knobPos = analogRead(knobPin);
 //   if(knobPos != lastKnobPos){
@@ -80,6 +113,12 @@ void checkDistance(){
 // }
 
 
+
+
+
+
+
+//----------------- TEST LOOP
 void runExample(){
     // SEND OSC MESSAGES EVERY 20 MILLISECONDS :
   static unsigned long myChronoStart;
@@ -115,3 +154,6 @@ void runExample(){
     */
   }
 }
+
+
+

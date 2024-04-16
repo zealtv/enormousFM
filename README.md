@@ -28,6 +28,7 @@ Reads distance sensor and controls lights and stepper motor.  Communicates with 
 ### Requires:
 - https://github.com/thomasfredericks/MicroOsc
 - https://github.com/qub1750ul/Arduino_SharpIR
+- http://www.airspayce.com/mikem/arduino/AccelStepper/
 
 
 # Installation and Setup
@@ -113,5 +114,5 @@ Analog distance sensor on pin A1
 /led i
 i: mode
 
-/dial f
+/needle f
 f: needle position 0.0 to 1.0
