@@ -12,7 +12,6 @@ CRGB leds[NUM_LEDS];
 int ledSaturation = 0;
 int ledHue = 0;
 
-
 //MOTOR
 // Motor pin definitions:
 #define motorPin1  9     // IN1 on the ULN2003 driver
@@ -64,25 +63,22 @@ void onReceiveOSC(MicroOscMessage& oscMessage) {
     myMicroOsc.sendMessage("/echo", "fsi", floatArgument, stringArgument, intArgument);
   }
 
+
+  //NEEDLE POSITION
   if(oscMessage.checkOscAddressAndTypeTags("/needle", "f")){
     float needlePos = oscMessage.nextAsFloat();
     setNeedle(needlePos);
   }
 
+
+  //LEDS
   //number of args must be the same as NUM_LEDS
   if(oscMessage.checkOscAddressAndTypeTags("/leds", "ffffffffff")){
-    // if(oscMessage.nextAsFloat() > 0){
-    //   leds[0] = CRGB::Red;
-    // }
-    // else{
-    //   leds[0] = CRGB::Black;
-    // }
-
     for(int i = 0; i < NUM_LEDS; i++){
       int brightness = (int)(oscMessage.nextAsFloat() * 255);
       leds[i] = CHSV(ledHue, ledSaturation, brightness);
+      FastLED.show();
     }
-    FastLED.show();
   }
 
   if(oscMessage.checkOscAddressAndTypeTags("/ledsat", "f")){
@@ -92,16 +88,6 @@ void onReceiveOSC(MicroOscMessage& oscMessage) {
   if(oscMessage.checkOscAddressAndTypeTags("/ledhue", "f")){
     ledHue = (int)(oscMessage.nextAsFloat() * 255);
   }
-
-  // if(oscMessage.checkOscAddressAndTypeTags("/getKnob", "i")){
-  //   checkKnob();
-  // }
-
-  //LED MODE
-
-  //NEEDLE POSITION
-
-
 }
 
 /*******
@@ -113,8 +99,6 @@ void loop() {
   myMicroOsc.onOscMessageReceived(onReceiveOSC);
 
   checkDistance();
-
-  
   stepper.runSpeed();
   // runExample();
 }
@@ -141,15 +125,6 @@ void setNeedle(float needlePos){
     stepper.enableOutputs(); 
     
 }
-
-
-
-// void checkKnob(){
-//   knobPos = analogRead(knobPin);
-//   if(knobPos != lastKnobPos){
-//     myMicroOsc.sendMessage("/knob", "i", knobPos);
-//   }
-// }
 
 
 
