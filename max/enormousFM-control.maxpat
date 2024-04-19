@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 529.0, 399.0, 563.0, 480.0 ],
+		"rect" : [ 551.0, 460.0, 477.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.0, 317.0, 32.0, 22.0 ],
+					"patching_rect" : [ 54.0, 265.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.0, 278.0, 97.0, 22.0 ],
+					"patching_rect" : [ 54.0, 226.0, 97.0, 22.0 ],
 					"text" : "udpreceive 5550"
 				}
 
@@ -70,7 +70,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 482.0, 82.0, 50.0, 22.0 ]
+					"patching_rect" : [ 357.0, 30.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 480.0, 132.0, 65.0, 22.0 ],
+					"patching_rect" : [ 355.0, 80.0, 65.0, 22.0 ],
 					"text" : "/needle $1"
 				}
 
@@ -95,7 +95,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 405.0, 82.0, 50.0, 22.0 ]
+					"patching_rect" : [ 280.0, 30.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -106,7 +106,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 403.0, 132.0, 65.0, 22.0 ],
+					"patching_rect" : [ 278.0, 80.0, 65.0, 22.0 ],
 					"presentation_linecount" : 2,
 					"text" : "/ledhue $1"
 				}
@@ -121,7 +121,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 332.0, 82.0, 50.0, 22.0 ]
+					"patching_rect" : [ 207.0, 30.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -132,7 +132,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 132.0, 61.0, 22.0 ],
+					"patching_rect" : [ 205.0, 80.0, 61.0, 22.0 ],
 					"presentation_linecount" : 2,
 					"text" : "/ledsat $1"
 				}
@@ -147,7 +147,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 255.0, 82.0, 50.0, 22.0 ]
+					"patching_rect" : [ 130.0, 30.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -158,7 +158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 253.0, 132.0, 51.0, 22.0 ],
+					"patching_rect" : [ 128.0, 80.0, 51.0, 22.0 ],
 					"text" : "/leds $1"
 				}
 
@@ -172,7 +172,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 158.0, 82.0, 50.0, 22.0 ]
+					"patching_rect" : [ 33.0, 30.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -183,7 +183,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 156.0, 132.0, 51.0, 22.0 ],
+					"patching_rect" : [ 31.0, 80.0, 51.0, 22.0 ],
 					"text" : "/gain $1"
 				}
 
@@ -194,7 +194,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 157.0, 202.0, 178.0, 22.0 ],
+					"patching_rect" : [ 32.0, 150.0, 178.0, 22.0 ],
 					"text" : "udpsend 255.255.255.255 6660"
 				}
 
