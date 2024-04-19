@@ -41,13 +41,13 @@ sleep 10
 
 # PUREDATA
 MACADDRESSLIST=$(cat /sys/class/net/wlan0/address | tr ':' ' ')
-MACADDRESS=$(cat /sys/class/net/wlan0/address | tr ':' '')
+# MACADDRESS=$(cat /sys/class/net/wlan0/address)
 now=$(date --iso-8601=seconds)
 STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
 
 echo "MAC: $MACADDRESS"
 
-pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; MACADDRESS $MACADDRESS" &
+pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; MACADDRESS $MACADDRESSLIST" &
 
 exit
