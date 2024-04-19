@@ -24,7 +24,7 @@
 #X obj 75 140 inlet;
 #X obj 575 513 route gain;
 #X obj 577 480 r \$0-in;
-#N canvas 18 168 450 300 gain 0;
+#N canvas 18 168 450 300 gain 1;
 #X obj 126 51 inlet~;
 #X obj 133 268 outlet~;
 #X msg 152 157 \$1 10;
@@ -81,7 +81,7 @@
 #X connect 18 0 14 0;
 #X connect 18 1 15 0;
 #X connect 20 0 10 0;
-#X connect 21 0 23 0;
+#X connect 21 0 23 1;
 #X connect 22 0 21 0;
 #X connect 23 0 2 0;
 #X connect 25 0 13 0;
