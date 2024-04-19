@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 148.0, 329.0, 150.0, 60.0 ],
+					"patching_rect" : [ 148.0, 329.0, 152.0, 60.0 ],
 					"text" : "folders not loading correctly - can't load folder number 2, probably an indexing thing in PD"
 				}
 
