@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 871.0, 369.0, 477.0, 480.0 ],
+		"rect" : [ 701.0, 384.0, 477.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 148.0, 329.0, 150.0, 60.0 ],
+					"text" : "folders not loading correctly - can't load folder number 2, probably an indexing thing in PD"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 263.0, 198.0, 57.0, 22.0 ],
+					"text" : "/all 1 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 292.0, 232.0, 57.0, 22.0 ],
+					"text" : "/all 2 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 231.0, 263.0, 67.0, 22.0 ],
+					"text" : "/all folder 2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"format" : 6,
 					"id" : "obj-17",
@@ -120,7 +168,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 400.0, 30.0, 50.0, 22.0 ]
+					"patching_rect" : [ 415.0, 30.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -131,8 +179,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 398.0, 80.0, 65.0, 22.0 ],
-					"text" : "/ledhue $1"
+					"patching_rect" : [ 413.0, 80.0, 80.0, 22.0 ],
+					"text" : "/all ledhue $1"
 				}
 
 			}
@@ -156,8 +204,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 80.0, 61.0, 22.0 ],
-					"text" : "/ledsat $1"
+					"patching_rect" : [ 325.0, 80.0, 76.0, 22.0 ],
+					"text" : "/all ledsat $1"
 				}
 
 			}
@@ -181,8 +229,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 248.0, 80.0, 51.0, 22.0 ],
-					"text" : "/leds $1"
+					"patching_rect" : [ 248.0, 80.0, 66.0, 22.0 ],
+					"text" : "/all leds $1"
 				}
 
 			}
@@ -260,8 +308,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
