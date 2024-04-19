@@ -40,7 +40,8 @@ sleep 10
 # todo
 
 # PUREDATA
-MACADDRESS=$(cat /sys/class/net/wlan0/address | tr ':' ' ')
+MACADDRESSLIST=$(cat /sys/class/net/wlan0/address | tr ':' ' ')
+MACADDRESS=$(cat /sys/class/net/wlan0/address)
 now=$(date --iso-8601=seconds)
 STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
