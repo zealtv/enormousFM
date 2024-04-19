@@ -13,7 +13,6 @@ Leverages the [bop](https://github.com/zealtv/bop) library.
 
 ### Requires
 - pd-comport
-- pd-slip
 
 
 ## python3
@@ -71,7 +70,7 @@ make
 sudo make install
 
 # install pd externals
-sudo apt-get install pd-slip pd-comport
+sudo apt-get install pd-comport
 
 # add externals to local extra folder
 mkdir ~/pd-externals
