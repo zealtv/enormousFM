@@ -1,4 +1,4 @@
-#N canvas 202 84 1059 762 12;
+#N canvas 272 154 1059 762 12;
 #X declare -path ./bop;
 #X declare -path ./bop/bop.p;
 #X obj 31 63 declare -path ./bop;
@@ -32,20 +32,21 @@
 #X obj 171 102 loadbang;
 #X msg 171 126 1;
 #X obj 151 184 line~;
+#X obj 152 76 inlet;
 #X connect 0 0 3 0;
-#X connect 0 1 2 0;
 #X connect 2 0 6 0;
 #X connect 3 0 1 0;
 #X connect 4 0 5 0;
 #X connect 5 0 2 0;
 #X connect 6 0 3 1;
+#X connect 7 0 2 0;
 #X restore 555 552 pd gain;
 #X text 499 554 gain;
 #X obj 583 111 route sample;
 #X text 406 162 sample;
 #X obj 569 218 r \$0-in;
 #X obj 569 258 route noise;
-#N canvas 18 168 666 488 noise 0;
+#N canvas 165 377 666 488 noise 0;
 #X obj 126 51 inlet~;
 #X obj 133 268 outlet~;
 #X msg 212 157 \$1 10;
@@ -53,10 +54,10 @@
 #X obj 231 102 loadbang;
 #X msg 231 126 1;
 #X obj 211 184 line~;
-#X obj 168 107 noise~;
-#X obj 168 131 *~ 0.01;
+#X obj 148 107 noise~;
+#X obj 148 131 *~ 0.01;
+#X obj 218 62 inlet;
 #X connect 0 0 1 0;
-#X connect 0 1 2 0;
 #X connect 2 0 6 0;
 #X connect 3 0 1 0;
 #X connect 4 0 5 0;
@@ -64,6 +65,7 @@
 #X connect 6 0 3 1;
 #X connect 7 0 8 0;
 #X connect 8 0 3 0;
+#X connect 9 0 2 0;
 #X restore 541 306 pd noise;
 #X text 464 306 noise;
 #X connect 4 0 5 0;
@@ -84,5 +86,5 @@
 #X connect 23 0 2 0;
 #X connect 25 0 13 0;
 #X connect 27 0 28 0;
-#X connect 28 0 29 0;
+#X connect 28 0 29 1;
 #X connect 29 0 6 0;
