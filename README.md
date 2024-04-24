@@ -93,13 +93,12 @@ cd ~
 # clone this repo
 git clone https://github.com/zealtv/enormousFM.git
 
-# goto scripts directory
-cd ./enormousFM/scripts
+# !copy samples
 
-# run update script to install rc.local autostart file and reboot
-sudo ./update.sh
+# run update script 
+sudo ~/enormousFM/scripts/update.sh
 
-# pi should reboot with jack, python, and puredata running
+# pi should copy rc.local and reboot with jack, python, and puredata running
 
 ```
 

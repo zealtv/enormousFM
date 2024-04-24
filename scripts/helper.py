@@ -3,7 +3,6 @@ from time import sleep
 from csv import reader
 from pyOSC3 import OSCServer, OSCClient, OSCMessage
 
-
 server = OSCServer( ("localhost", 7770) )
 client = OSCClient()
 client.connect( ("localhost", 6661) )
@@ -51,8 +50,8 @@ server.addMsgHandler( "/update", update_callback )
 server.addMsgHandler( "/shutdown", shutdown_callback )
 
 
+#ARG 1 MAC Address
 if __name__ == "__main__":
-    #ARG 1 MAC Address
 
     config_callback()
 

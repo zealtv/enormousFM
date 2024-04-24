@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 81.0, 187.0, 645.0, 584.0 ],
+		"rect" : [ 153.0, 223.0, 645.0, 584.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.0, 403.0, 63.0, 22.0 ],
+					"patching_rect" : [ 95.0, 391.0, 63.0, 22.0 ],
 					"text" : "/shutdown"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 400.0, 49.0, 22.0 ],
+					"patching_rect" : [ 31.0, 391.0, 49.0, 22.0 ],
 					"text" : "/update"
 				}
 
@@ -100,11 +100,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.5, 434.0, 150.0, 20.0 ],
-					"text" : "set ID of local instance"
+					"patching_rect" : [ 82.5, 422.0, 150.0, 33.0 ],
+					"text" : "set ID and POS \nof local instance"
 				}
 
 			}
