@@ -37,18 +37,19 @@ jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 44100 -s &
 sleep 10
 
 MACADDRESSLIST=$(cat /sys/class/net/wlan0/address | tr ':' ' ')
-# MACADDRESS=$(cat /sys/class/net/wlan0/address)
+MACADDRESS=$(cat /sys/class/net/wlan0/address)
 now=$(date --iso-8601=seconds)
 STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
 
-# PYTHON
-# todo python passes variables to PD via OSC in config()
-
-# PUREDATA
-
 echo "MAC: $MACADDRESS"
 
-pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; MACADDRESS $MACADDRESSLIST" &
+# PYTHON
+# todo python passes variables to PD via OSC in config()
+# args: path/to/config.csv MACADDRESS
+python /home/pi/enormousFM/scripts/helper.py /home/pi/enormousFM/config.csv $MACADDRESS 
+
+# PUREDATA
+pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; " &
 
 exit

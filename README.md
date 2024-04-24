@@ -19,6 +19,8 @@ Leverages the [bop](https://github.com/zealtv/bop) library.
 
 Provides admin services (updating, rebooting, shutdown). 
 
+### Requires
+pyOSC3
 
 ## Arduino
 
@@ -77,6 +79,9 @@ mkdir ~/pd-externals
 cd ~/pd-externals 
 sudo cp /lib/pd/extra/* ./
 sudo chown -R pi ./*
+
+# install python dependencies
+pip install pyOSC3
 
 ```
 
