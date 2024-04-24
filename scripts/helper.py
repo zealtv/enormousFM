@@ -10,16 +10,19 @@ client.connect( ("localhost", 6661) )
 
 
 def config_callback(path='', tags='', args='', source=''):
-    print("loading: ", sys.argv[1])
+
+    directory = os.path.dirname(os.path.realpath(__file__))
+    config_file = os.path.join(directory, "config.csv")
+    print("loading: ", config_file)
 
     # open file in read mode
-    with open(sys.argv[1], 'r') as read_obj:
+    with open(config_file, 'r') as read_obj:
         # pass the file object to reader() to get the reader object
         csv_reader = reader(read_obj, skipinitialspace=True)
         # Iterate over each row in the csv using reader object
         for row in csv_reader:
             # row variable is a list that represents a row in csv
-            if row[0] == sys.argv[2]:
+            if row[0] == sys.argv[1]:
                 print('MAC MATCHED LINE IN CONFIG')
                 msg = OSCMessage("/id")
                 msg.append(row[1], 'f')
@@ -49,8 +52,7 @@ server.addMsgHandler( "/shutdown", shutdown_callback )
 
 
 if __name__ == "__main__":
-    #ARG 1 config.csv path
-    #ARG 2 MAC Address
+    #ARG 1 MAC Address
 
     config_callback()
 

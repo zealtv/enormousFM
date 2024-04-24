@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 705.0, 109.0, 645.0, 584.0 ],
+		"rect" : [ 81.0, 187.0, 645.0, 584.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 96.0, 403.0, 63.0, 22.0 ],
+					"text" : "/shutdown"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 31.0, 400.0, 49.0, 22.0 ],
+					"text" : "/update"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "comment",
@@ -79,7 +103,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 68.5, 434.0, 150.0, 20.0 ],
+					"patching_rect" : [ 83.5, 434.0, 150.0, 20.0 ],
 					"text" : "set ID of local instance"
 				}
 
@@ -91,8 +115,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 434.0, 31.0, 22.0 ],
-					"text" : "/id 1"
+					"patching_rect" : [ 31.0, 434.0, 44.0, 22.0 ],
+					"text" : "/config"
 				}
 
 			}

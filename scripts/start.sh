@@ -46,8 +46,7 @@ echo "MAC: $MACADDRESS"
 
 # PYTHON
 # todo python passes variables to PD via OSC in config()
-# args: path/to/config.csv MACADDRESS
-python /home/pi/enormousFM/scripts/helper.py /home/pi/enormousFM/config.csv $MACADDRESS 
+python /home/pi/enormousFM/scripts/helper.py $MACADDRESS 
 
 # PUREDATA
 pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; " &
