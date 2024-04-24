@@ -20,7 +20,7 @@ Leverages the [bop](https://github.com/zealtv/bop) library.
 Provides admin services (updating, rebooting, shutdown). 
 
 ### Requires
-pyOSC3
+- pyOSC3
 
 ## Arduino
 
