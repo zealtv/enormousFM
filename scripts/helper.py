@@ -26,10 +26,13 @@ if __name__ == "__main__":
         # Iterate over each row in the csv using reader object
         for row in csv_reader:
             # row variable is a list that represents a row in csv
-            print(row)
             if row[0] == sys.argv[2]:
-                print('MATCH')
-                print('ID: ', float(row[1]))
+                print('MAC MATCHED LINE IN CONFIG')
                 msg = OSCMessage("/id")
                 msg.append(row[1], 'f')
+                client.send(msg)
+
+                msg.clear("/pos")
+                msg.append(row[2], typehint='f')
+                msg.append(row[3], typehint='f')
                 client.send(msg)
