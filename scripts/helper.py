@@ -1,23 +1,16 @@
-import os, time, sys
+import os, sys
+from time import sleep
 from csv import reader
 from pyOSC3 import OSCServer, OSCClient, OSCMessage
 
 
 server = OSCServer( ("localhost", 7770) )
-server.timeout = 0
-run = True
-
 client = OSCClient()
 client.connect( ("localhost", 6661) )
 
 
-
-if __name__ == "__main__":
-    # watch_for_shutdown_file()
-    #ARG 1 config.csv path
-    #ARG 2 MAC Address
-
-    print(sys.argv[1])
+def config_callback(path='', tags='', args='', source=''):
+    print("loading: ", sys.argv[1])
 
     # open file in read mode
     with open(sys.argv[1], 'r') as read_obj:
@@ -36,3 +29,17 @@ if __name__ == "__main__":
                 msg.append(row[2], typehint='f')
                 msg.append(row[3], typehint='f')
                 client.send(msg)
+
+server.addMsgHandler( "/config", config_callback )
+
+if __name__ == "__main__":
+    config_callback()
+
+    while True:
+        sleep(1)
+        server.handle_request()
+
+    # watch_for_shutdown_file()
+    #ARG 1 config.csv path
+    #ARG 2 MAC Address
+
