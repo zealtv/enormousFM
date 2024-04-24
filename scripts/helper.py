@@ -30,16 +30,30 @@ def config_callback(path='', tags='', args='', source=''):
                 msg.append(row[3], typehint='f')
                 client.send(msg)
 
+
+def update_callback(path='', tags='', args='', source=''):
+    directory = os.path.dirname(os.path.realpath(__file__))
+    update_script = os.path.join(directory, "update.sh")
+    print("UPDATE!")
+    os.system(update_script)
+        
+
+def shutdown_callback(path='', tags='', args='', source=''):
+    print("SHUTDOWN!")
+    os.system("systemctl poweroff")
+
+
 server.addMsgHandler( "/config", config_callback )
+server.addMsgHandler( "/update", update_callback )
+server.addMsgHandler( "/shutdown", shutdown_callback )
+
 
 if __name__ == "__main__":
+    #ARG 1 config.csv path
+    #ARG 2 MAC Address
+
     config_callback()
 
     while True:
         sleep(1)
         server.handle_request()
-
-    # watch_for_shutdown_file()
-    #ARG 1 config.csv path
-    #ARG 2 MAC Address
-
