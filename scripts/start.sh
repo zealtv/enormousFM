@@ -36,19 +36,13 @@ jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 44100 -s &
 # leave enough time for jack to start before launching PD
 sleep 10
 
-MACADDRESSLIST=$(cat /sys/class/net/wlan0/address | tr ':' ' ')
 MACADDRESS=$(cat /sys/class/net/wlan0/address)
-now=$(date --iso-8601=seconds)
-STARTDATE=$(date -d "$now" +%Y%m%d)
-STARTTIME=$(date -d "$now" +%H%M%S)
-
 echo "MAC: $MACADDRESS"
 
 # PYTHON
-# todo python passes variables to PD via OSC in config()
 python /home/pi/enormousFM/scripts/helper.py $MACADDRESS 
 
 # PUREDATA
-pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM; " &
+pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; RANDOM $RANDOM; " &
 
 exit
