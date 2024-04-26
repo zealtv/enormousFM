@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 270.0, 258.0, 881.0, 624.0 ],
+		"rect" : [ 215.0, 276.0, 881.0, 624.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,31 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 677.0, 181.0, 245.0, 35.0 ],
+					"text" : "/all sequence read seq/chime, /all sequence loop 0, /all sequence go"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 73.0, 241.0, 81.0, 22.0 ],
+					"text" : "/all casio stop"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "message",
@@ -81,7 +106,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 618.0, 194.0, 51.0, 22.0 ],
+					"patching_rect" : [ 618.0, 224.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -118,8 +143,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 143.0, 304.0, 107.0, 22.0 ],
-					"text" : "/all casio decay $1"
+					"patching_rect" : [ 143.0, 304.0, 98.0, 22.0 ],
+					"text" : "/all casio gain $1"
 				}
 
 			}
@@ -919,6 +944,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-84", 0 ]
 				}
 
 			}
