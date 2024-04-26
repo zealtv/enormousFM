@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 287.0, 145.0, 808.0, 596.0 ],
+		"rect" : [ 270.0, 258.0, 881.0, 624.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -574,8 +574,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 520.0, 123.0, 65.0, 22.0 ],
-					"text" : "/needle $1"
+					"patching_rect" : [ 520.0, 123.0, 80.0, 22.0 ],
+					"text" : "/all needle $1"
 				}
 
 			}

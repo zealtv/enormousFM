@@ -1,5 +1,4 @@
 # enormousFM
-## The Enormous Radio Project
 
 A Raspberry Pi and Arduino based framework for networked multichannel sound, light, and motion.  
 

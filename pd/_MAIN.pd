@@ -1,4 +1,4 @@
-#N canvas 83 456 578 425 12;
+#N canvas 109 143 519 424 12;
 #X declare -path ./bop;
 #X obj 36 355 dac~;
 #X msg 28 147 \; pd dsp 1;
@@ -141,9 +141,9 @@
 #X connect 20 0 7 0;
 #X connect 21 0 0 0;
 #X connect 21 1 22 0;
-#X restore 349 82 pd ARD-IO;
-#X obj 349 56 r to-arduino, f 23;
-#X obj 349 108 s from-arduino, f 23;
+#X restore 349 85 pd ARD-IO;
+#X obj 349 56 r to-arduino, f 15;
+#X obj 349 114 s from-arduino, f 15;
 #X text 346 14 --- ARDUINO ---;
 #X text 211 15 --- OSC ---;
 #X text 30 233 --- AUDIO ---;
@@ -201,7 +201,7 @@
 #X connect 16 0 7 0;
 #X connect 17 0 18 0;
 #X connect 18 0 4 0;
-#X restore 426 82 pd ARD-LOGIC;
+#X restore 349 143 pd ARD-LOGIC;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 5 0 3 0;
