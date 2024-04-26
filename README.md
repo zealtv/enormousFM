@@ -89,7 +89,7 @@ pip install pyOSC3
 # goto home directory
 cd ~
 
-# clone this repo
+# clone this repo (or your fork)
 git clone https://github.com/zealtv/enormousFM.git
 
 # !copy samples
