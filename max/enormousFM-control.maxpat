@@ -40,6 +40,31 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"format" : 6,
+					"id" : "obj-71",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 143.0, 271.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 143.0, 304.0, 107.0, 22.0 ],
+					"text" : "/all casio decay $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-67",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -783,8 +808,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-71", 0 ]
 				}
 
 			}
