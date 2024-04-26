@@ -1,0 +1,8 @@
+casio stop;
+casio 60 127;
+casio 64 127;
+- 500;
+casio stop;
+casio 67 127;
+casio 71 127;
+- 500;
