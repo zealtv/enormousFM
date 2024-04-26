@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 117.0, 191.0, 979.0, 709.0 ],
+		"rect" : [ 796.0, 126.0, 979.0, 709.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -620,8 +620,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 520.0, 123.0, 80.0, 22.0 ],
-					"text" : "/all needle $1"
+					"patching_rect" : [ 520.0, 123.0, 101.0, 22.0 ],
+					"text" : "/all ard needle $1"
 				}
 
 			}
@@ -634,7 +634,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 413.0, 73.0, 50.0, 22.0 ]
+					"patching_rect" : [ 412.0, 73.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -645,8 +645,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 413.0, 123.0, 80.0, 22.0 ],
-					"text" : "/all ledhue $1"
+					"patching_rect" : [ 412.0, 123.0, 101.0, 22.0 ],
+					"text" : "/all ard ledhue $1"
 				}
 
 			}
@@ -659,7 +659,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 325.0, 73.0, 50.0, 22.0 ]
+					"patching_rect" : [ 310.0, 73.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -670,8 +670,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 123.0, 76.0, 22.0 ],
-					"text" : "/all ledsat $1"
+					"patching_rect" : [ 310.0, 123.0, 97.0, 22.0 ],
+					"text" : "/all ard ledsat $1"
 				}
 
 			}
@@ -684,7 +684,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 248.0, 73.0, 50.0, 22.0 ]
+					"patching_rect" : [ 218.0, 73.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -695,8 +695,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 248.0, 123.0, 66.0, 22.0 ],
-					"text" : "/all leds $1"
+					"patching_rect" : [ 218.0, 123.0, 87.0, 22.0 ],
+					"text" : "/all ard leds $1"
 				}
 
 			}

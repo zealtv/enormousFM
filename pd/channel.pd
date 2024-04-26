@@ -41,9 +41,9 @@
 #X text 555 924 gain;
 #X obj 623 131 route sample;
 #X text 532 161 sample;
-#X obj 664 308 r \$0-in;
-#X obj 664 338 route noise;
-#N canvas 165 377 666 488 noise 0;
+#X obj 664 278 r \$0-in;
+#X obj 664 308 route noise;
+#N canvas 133 313 666 488 noise 0;
 #X obj 126 51 inlet~;
 #X obj 133 268 outlet~;
 #X msg 212 157 \$1 10;
