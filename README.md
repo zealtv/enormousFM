@@ -97,7 +97,7 @@ git clone https://github.com/zealtv/enormousFM.git
 # run update script 
 sudo ~/enormousFM/scripts/update.sh
 
-# pi should copy rc.local and reboot with jack, python, and puredata running
+# pi should copy rc.local and reboot with jack, puredata, and helper.py running
 
 ```
 

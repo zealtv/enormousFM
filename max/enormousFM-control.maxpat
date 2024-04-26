@@ -40,6 +40,29 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-88",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 346.0, 189.0, 150.0, 47.0 ],
+					"text" : "should be:\n/all ard leds 1\n/all ard ledsat 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 119.0, 17.0, 188.0, 20.0 ],
+					"text" : "/[target] [module] [param] [args...]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-84",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -58,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 73.0, 241.0, 81.0, 22.0 ],
+					"patching_rect" : [ 73.0, 286.0, 81.0, 22.0 ],
 					"text" : "/all casio stop"
 				}
 
@@ -132,7 +155,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 143.0, 271.0, 50.0, 22.0 ]
+					"patching_rect" : [ 143.0, 316.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -143,7 +166,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 143.0, 304.0, 98.0, 22.0 ],
+					"patching_rect" : [ 143.0, 349.0, 98.0, 22.0 ],
 					"text" : "/all casio gain $1"
 				}
 
@@ -154,7 +177,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 272.0, 120.0, 20.0 ],
+					"patching_rect" : [ 639.0, 317.0, 120.0, 20.0 ],
 					"text" : "get params"
 				}
 
@@ -166,7 +189,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 670.0, 330.0, 89.0, 22.0 ],
+					"patching_rect" : [ 670.0, 375.0, 89.0, 22.0 ],
 					"text" : "/all casio dump"
 				}
 
@@ -178,7 +201,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 368.0, 51.0, 22.0 ],
+					"patching_rect" : [ 639.0, 413.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -190,8 +213,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.0, 299.0, 99.0, 22.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 639.0, 344.0, 99.0, 22.0 ],
 					"text" : "/all sample dump"
 				}
 
@@ -203,7 +225,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 32.0, 271.0, 37.0, 22.0 ],
+					"patching_rect" : [ 32.0, 316.0, 37.0, 22.0 ],
 					"text" : "* 127"
 				}
 
@@ -216,7 +238,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 32.0, 241.0, 24.0, 24.0 ]
+					"patching_rect" : [ 32.0, 286.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -227,7 +249,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 302.0, 89.0, 22.0 ],
+					"patching_rect" : [ 31.0, 347.0, 89.0, 22.0 ],
 					"text" : "/all casio 65 $1"
 				}
 
@@ -239,7 +261,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 346.0, 51.0, 22.0 ],
+					"patching_rect" : [ 31.0, 391.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -251,7 +273,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 530.0, 51.0, 22.0 ],
+					"patching_rect" : [ 639.0, 590.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -262,7 +284,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 668.0, 447.0, 150.0, 20.0 ],
+					"patching_rect" : [ 668.0, 507.0, 150.0, 20.0 ],
 					"text" : "gate reporting"
 				}
 
@@ -275,7 +297,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 639.0, 447.0, 24.0, 24.0 ]
+					"patching_rect" : [ 639.0, 507.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -286,7 +308,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.0, 486.0, 75.0, 22.0 ],
+					"patching_rect" : [ 639.0, 546.0, 75.0, 22.0 ],
 					"text" : "/all report $1"
 				}
 
@@ -298,7 +320,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 451.0, 63.0, 22.0 ],
+					"patching_rect" : [ 95.0, 511.0, 63.0, 22.0 ],
 					"text" : "/shutdown"
 				}
 
@@ -310,7 +332,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 451.0, 49.0, 22.0 ],
+					"patching_rect" : [ 31.0, 511.0, 49.0, 22.0 ],
 					"text" : "/update"
 				}
 
@@ -321,7 +343,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 119.0, 24.0, 150.0, 20.0 ],
+					"patching_rect" : [ 119.0, 39.0, 150.0, 20.0 ],
 					"text" : "can target by id or all"
 				}
 
@@ -357,7 +379,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.5, 482.0, 150.0, 33.0 ],
+					"patching_rect" : [ 82.5, 542.0, 150.0, 33.0 ],
 					"text" : "set ID and POS \nof local instance"
 				}
 
@@ -369,7 +391,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 494.0, 44.0, 22.0 ],
+					"patching_rect" : [ 31.0, 554.0, 44.0, 22.0 ],
 					"text" : "/config"
 				}
 
@@ -380,7 +402,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 527.0, 138.0, 22.0 ],
+					"patching_rect" : [ 31.0, 587.0, 138.0, 22.0 ],
 					"text" : "udpsend 127.0.0.1 7770"
 				}
 
@@ -417,7 +439,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 345.0, 295.0, 24.0, 24.0 ]
+					"patching_rect" : [ 345.0, 340.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -429,7 +451,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 279.0, 295.0, 50.0, 22.0 ]
+					"patching_rect" : [ 279.0, 340.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -452,7 +474,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 279.0, 370.0, 51.0, 22.0 ],
+					"patching_rect" : [ 279.0, 415.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -465,7 +487,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 241.0, 497.0, 49.0, 22.0 ],
+					"patching_rect" : [ 241.0, 557.0, 49.0, 22.0 ],
 					"text" : "r to-osc"
 				}
 
@@ -477,7 +499,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 425.0, 370.0, 51.0, 22.0 ],
+					"patching_rect" : [ 425.0, 415.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -490,7 +512,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 425.0, 295.0, 50.0, 22.0 ]
+					"patching_rect" : [ 425.0, 340.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -501,8 +523,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.0, 328.0, 116.0, 22.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 425.0, 373.0, 116.0, 22.0 ],
 					"text" : "/all sample folder $1"
 				}
 
@@ -514,7 +535,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 279.0, 328.0, 64.0, 22.0 ],
+					"patching_rect" : [ 279.0, 373.0, 64.0, 22.0 ],
 					"text" : "/all $1 127"
 				}
 
@@ -526,7 +547,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 345.0, 328.0, 44.0, 22.0 ],
+					"patching_rect" : [ 345.0, 373.0, 44.0, 22.0 ],
 					"text" : "/all 0 0"
 				}
 
@@ -562,7 +583,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.0, 540.0, 32.0, 22.0 ],
+					"patching_rect" : [ 451.0, 585.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -574,7 +595,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 451.0, 501.0, 97.0, 22.0 ],
+					"patching_rect" : [ 451.0, 561.0, 97.0, 22.0 ],
 					"text" : "udpreceive 5550"
 				}
 
@@ -710,7 +731,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.0, 527.0, 178.0, 22.0 ],
+					"patching_rect" : [ 241.0, 587.0, 178.0, 22.0 ],
 					"text" : "udpsend 255.255.255.255 6660"
 				}
 
