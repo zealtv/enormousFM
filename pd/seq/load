@@ -10,7 +10,7 @@ casio decay 1;
 casio attack 0.01;
 casio wave-2 4;
 casio wave-1 3;
---- 0 to 0.8 in 2000ms;
+--- sweep 0 to 0.8 in 2000ms;
 casio filter 0 0.8 2000;
 === PLAY NOTES;
 casio 60 127;

@@ -1,7 +1,7 @@
 #N canvas 0 49 1251 863 12;
 #X declare -path ./bop;
 #X obj 41 63 declare -path ./bop;
-#X text 41 33 hi there! you are great! :);
+#X text 1231 1253 hi there! you are great! :);
 #X obj 612 1043 outlet~;
 #X obj 947 1043 outlet;
 #X obj 743 707 r \$0-in;
@@ -82,9 +82,9 @@
 #X obj 238 506 r \$0-in;
 #X obj 238 536 route sequence;
 #X obj 40 570 bop.module/sequence;
-#A saved casio stop \; casio gain 1 \; casio release 1 \; casio sustain 0 \; casio decay 1 \; casio attack 0.01 \; casio wave-2 4 \; casio wave-1 3 \; --- 0 to 0.8 in 2000ms \; casio filter 0 0.8 2000 \; === \; casio 60 127 \; casio 67 127 \; casio 74 127 \; - 2000 \; casio stop \;;
-#X obj 238 603 s \$0-rpt;
-#X obj 238 571 list prepend sequence;
+#A saved === DEFAULT SETTINGS \; --- custom sample path \; sample path ../../samples \; === CASIO BOOT TONE \; casio stop \; casio gain 1 \; casio release 1 \; casio sustain 0 \; casio decay 1 \; casio attack 0.01 \; casio wave-2 4 \; casio wave-1 3 \; --- 0 to 0.8 in 2000ms \; casio filter 0 0.8 2000 \; === PLAY NOTES \; casio 60 127 \; casio 67 127 \; casio 74 127 \; - 2000 \; casio stop \;;
+#X obj 238 611 s \$0-rpt;
+#X obj 238 579 list prepend sequence;
 #X msg 180 446 open;
 #X obj 1028 928 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 170 611 s \$0-in;
@@ -93,7 +93,7 @@
 #X obj 116 418 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X msg 40 418 go;
 #X obj 611 572 bop.module/casio~;
-#X obj 238 420 loadbang;
+#X obj 236 422 loadbang;
 #X text 543 574 casio;
 #X obj 657 986 s \$0-rpt;
 #X obj 657 951 list prepend gain;
@@ -103,7 +103,7 @@
 #X obj 664 401 list prepend noise;
 #X text 39 384 SEQUENCER----------------------------------------------;
 #X text 169 667 route arduino commands...;
-#X msg 238 444 read seq/load \, loop 0 \, go;
+#X msg 236 446 read seq/load \, loop 0 \, go;
 #X connect 4 0 5 0;
 #X connect 5 0 6 1;
 #X connect 5 0 57 0;

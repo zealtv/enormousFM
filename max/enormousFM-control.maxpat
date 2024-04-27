@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 322.0, 16.0, 150.0, 20.0 ],
+					"text" : "/[target] (note, velocity)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -81,8 +92,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 677.0, 181.0, 245.0, 35.0 ],
-					"text" : "/all sequence read seq/chime, /all sequence loop 0, /all sequence go"
+					"patching_rect" : [ 677.0, 181.0, 267.0, 35.0 ],
+					"text" : "/all sequence read seq/load, /all sequence loop 0, /all sequence go"
 				}
 
 			}
