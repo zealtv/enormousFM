@@ -1,3 +1,6 @@
+--- default settings;
+sample path ../../samples
+===;
 casio stop;
 casio gain 1;
 casio release 1;

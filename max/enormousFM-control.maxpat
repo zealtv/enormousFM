@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 319.0, 125.0, 949.0, 709.0 ],
+		"rect" : [ 154.0, 99.0, 949.0, 709.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 567.0, 375.0, 161.0, 22.0 ],
+					"patching_rect" : [ 447.0, 405.0, 161.0, 22.0 ],
 					"text" : "/all sample path ../../samples"
 				}
 
@@ -511,7 +511,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 425.0, 415.0, 51.0, 22.0 ],
+					"patching_rect" : [ 425.0, 445.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 

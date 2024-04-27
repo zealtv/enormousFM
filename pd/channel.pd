@@ -94,7 +94,6 @@
 #X msg 40 418 go;
 #X obj 611 572 bop.module/casio~;
 #X obj 238 420 loadbang;
-#X msg 238 444 read seq/chime \, loop 0 \, go;
 #X text 543 574 casio;
 #X obj 657 986 s \$0-rpt;
 #X obj 657 951 list prepend gain;
@@ -104,9 +103,10 @@
 #X obj 664 401 list prepend noise;
 #X text 39 384 SEQUENCER----------------------------------------------;
 #X text 169 667 route arduino commands...;
+#X msg 238 444 read seq/load \, loop 0 \, go;
 #X connect 4 0 5 0;
 #X connect 5 0 6 1;
-#X connect 5 0 58 0;
+#X connect 5 0 57 0;
 #X connect 6 0 19 0;
 #X connect 10 0 7 0;
 #X connect 10 2 8 0;
@@ -118,12 +118,12 @@
 #X connect 17 0 19 1;
 #X connect 18 0 17 0;
 #X connect 19 0 2 0;
-#X connect 19 1 56 0;
+#X connect 19 1 55 0;
 #X connect 21 0 13 0;
 #X connect 23 0 24 0;
 #X connect 24 0 25 1;
 #X connect 25 0 51 0;
-#X connect 25 1 60 0;
+#X connect 25 1 59 0;
 #X connect 27 0 45 0;
 #X connect 28 0 27 0;
 #X connect 29 0 30 0;
@@ -146,8 +146,8 @@
 #X connect 50 0 41 0;
 #X connect 51 0 6 0;
 #X connect 51 1 37 0;
-#X connect 52 0 53 0;
-#X connect 53 0 41 0;
-#X connect 56 0 55 0;
-#X connect 58 0 57 0;
-#X connect 60 0 59 0;
+#X connect 52 0 62 0;
+#X connect 55 0 54 0;
+#X connect 57 0 56 0;
+#X connect 59 0 58 0;
+#X connect 62 0 41 0;
