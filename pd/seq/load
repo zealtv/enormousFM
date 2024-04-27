@@ -1,6 +1,6 @@
 === DEFAULT SETTINGS;
 --- custom sample path;
-sample path ../../samples
+sample path ../../samples;
 === CASIO BOOT TONE;
 casio stop;
 casio gain 1;
