@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 796.0, 126.0, 979.0, 709.0 ],
+		"rect" : [ 319.0, 125.0, 949.0, 709.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-88",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 346.0, 189.0, 150.0, 47.0 ],
-					"text" : "should be:\n/all ard leds 1\n/all ard ledsat 1"
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 55.0, 256.0, 89.0, 22.0 ],
+					"text" : "/all casio dump"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 567.0, 375.0, 161.0, 22.0 ],
+					"text" : "/all sample path ../../samples"
 				}
 
 			}
@@ -177,7 +189,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 317.0, 120.0, 20.0 ],
+					"patching_rect" : [ 759.0, 317.0, 120.0, 20.0 ],
 					"text" : "get params"
 				}
 
@@ -189,7 +201,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 670.0, 375.0, 89.0, 22.0 ],
+					"patching_rect" : [ 790.0, 375.0, 89.0, 22.0 ],
 					"text" : "/all casio dump"
 				}
 
@@ -201,7 +213,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 413.0, 51.0, 22.0 ],
+					"patching_rect" : [ 759.0, 413.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -213,7 +225,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.0, 344.0, 99.0, 22.0 ],
+					"patching_rect" : [ 759.0, 344.0, 99.0, 22.0 ],
 					"text" : "/all sample dump"
 				}
 
@@ -273,7 +285,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 590.0, 51.0, 22.0 ],
+					"patching_rect" : [ 759.0, 590.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -284,7 +296,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 668.0, 507.0, 150.0, 20.0 ],
+					"patching_rect" : [ 788.0, 507.0, 150.0, 20.0 ],
 					"text" : "gate reporting"
 				}
 
@@ -297,7 +309,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 639.0, 507.0, 24.0, 24.0 ]
+					"patching_rect" : [ 759.0, 507.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -308,7 +320,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.0, 546.0, 75.0, 22.0 ],
+					"patching_rect" : [ 759.0, 546.0, 75.0, 22.0 ],
 					"text" : "/all report $1"
 				}
 
@@ -774,6 +786,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -811,6 +830,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
