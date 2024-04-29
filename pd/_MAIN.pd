@@ -1,6 +1,6 @@
 #N canvas 76 208 479 419 12;
 #X declare -path ./bop;
-#X obj 36 347 dac~;
+#X obj 36 342 dac~;
 #X msg 28 147 \; pd dsp 1;
 #X obj 28 116 loadbang;
 #N canvas 64 425 858 437 OSC-IO 0;
@@ -70,8 +70,8 @@
 #X connect 26 0 27 0;
 #X connect 26 1 15 0;
 #X connect 27 0 21 0;
-#X restore 209 81 pd OSC-IO;
-#X obj 209 106 s osc-in, f 9;
+#X restore 209 84 pd OSC-IO;
+#X obj 209 113 s osc-in, f 9;
 #X obj 209 55 r osc-out;
 #N canvas 627 254 664 551 ARD-IO 0;
 #X obj 30 425 oscparse;
@@ -157,13 +157,13 @@
 #X restore 28 87 pd variables;
 #X f 19;
 #X obj 28 58 declare -path ./bop;
-#X obj 36 304 channel 0;
+#X obj 36 303 channel 0;
 #X obj 36 264 r osc-in;
-#X obj 96 347 s osc-out;
+#X obj 96 342 s osc-out;
 #X text 29 15 --- INIT ---;
 #X obj 339 56 r ard-out;
 #X obj 339 114 s ard-in, f 9;
-#X text 30 225 --- AUDIO / LIGHT / MOTION / SENSE ---;
+#X text 30 225 --- AUDIO / LIGHT / MOTION / SENSING ---;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 5 0 3 0;
