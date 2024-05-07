@@ -674,7 +674,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 541.0, 49.0, 22.0 ],
+					"patching_rect" : [ 14.0, 558.0, 49.0, 22.0 ],
 					"text" : "/update"
 				}
 
@@ -744,8 +744,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 617.0, 138.0, 22.0 ],
-					"text" : "udpsend 127.0.0.1 7770"
+					"patching_rect" : [ 31.0, 617.0, 178.0, 22.0 ],
+					"text" : "udpsend 255.255.255.255 7770"
 				}
 
 			}
@@ -1272,6 +1272,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-47", 0 ]
 				}
 
 			}

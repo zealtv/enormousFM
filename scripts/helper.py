@@ -4,7 +4,7 @@ from csv import reader
 from pyOSC3 import OSCServer, OSCClient, OSCMessage
 import atexit
 
-server = OSCServer( ('127.0.0.1', 7770) )
+server = OSCServer( ('', 7770) )
 client = OSCClient()
 client.connect( ('127.0.0.1', 6661) )
 
@@ -28,6 +28,7 @@ def config_callback(path='', tags='', args='', source=''):
                 msg.append(row[1], 'f')
                 client.send(msg)
 
+                # this is causing an error in linux
                 # msg.clear("/pos")
                 # msg.append(row[2], typehint='f')
                 # msg.append(row[3], typehint='f')
