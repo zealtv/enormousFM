@@ -79,9 +79,15 @@ cd ~/pd-externals
 sudo cp /lib/pd/extra/* ./
 sudo chown -R pi ./*
 
-# install python dependencies
+#install pip
 sudo apt-get pip
-pip install pyOSC3
+
+#make python virtual environment
+cd ~
+python3 -m venv ./venv
+
+# install python dependencies
+./venv/bin/pip install pyOSC3
 
 ```
 
