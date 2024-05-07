@@ -2,6 +2,7 @@ import os, sys
 from time import sleep
 from csv import reader
 from pyOSC3 import OSCServer, OSCClient, OSCMessage
+import atexit
 
 server = OSCServer( ("localhost", 7770) )
 client = OSCClient()
@@ -44,6 +45,9 @@ def shutdown_callback(path='', tags='', args='', source=''):
     print("SHUTDOWN!")
     os.system("systemctl poweroff")
 
+def exit_handler():
+    print("exiting.  closing server...")
+    server.close()
 
 server.addMsgHandler( "/config", config_callback )
 server.addMsgHandler( "/update", update_callback )
