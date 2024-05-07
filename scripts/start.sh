@@ -40,7 +40,7 @@ MACADDRESS=$(cat /sys/class/net/wlan0/address)
 echo "MAC: $MACADDRESS"
 
 # PYTHON
-/home/pi/venv/bin/python /home/pi/enormousFM/scripts/helper.py $MACADDRESS 
+sudo /home/pi/venv/bin/python /home/pi/enormousFM/scripts/helper.py $MACADDRESS 
 
 # PUREDATA
 pd -nogui -jack -open "/home/pi/enormousFM/pd/_MAIN.pd" -send "; RANDOM $RANDOM; " &
