@@ -80,6 +80,7 @@ sudo cp /lib/pd/extra/* ./
 sudo chown -R pi ./*
 
 # install python dependencies
+sudo apt-get pip
 pip install pyOSC3
 
 ```
