@@ -4,9 +4,9 @@ from csv import reader
 from pyOSC3 import OSCServer, OSCClient, OSCMessage
 import atexit
 
-server = OSCServer( ("localhost", 7770) )
+server = OSCServer( ('127.0.0.1', 7770) )
 client = OSCClient()
-client.connect( ("localhost", 6661) )
+client.connect( ('127.0.0.1', 6661) )
 
 
 def config_callback(path='', tags='', args='', source=''):
