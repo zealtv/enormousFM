@@ -28,10 +28,10 @@ def config_callback(path='', tags='', args='', source=''):
                 msg.append(row[1], 'f')
                 client.send(msg)
 
-                msg.clear("/pos")
-                msg.append(row[2], typehint='f')
-                msg.append(row[3], typehint='f')
-                client.send(msg)
+                # msg.clear("/pos")
+                # msg.append(row[2], typehint='f')
+                # msg.append(row[3], typehint='f')
+                # client.send(msg)
 
 
 def update_callback(path='', tags='', args='', source=''):
