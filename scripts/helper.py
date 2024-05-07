@@ -52,7 +52,7 @@ def exit_handler():
 server.addMsgHandler( "/config", config_callback )
 server.addMsgHandler( "/update", update_callback )
 server.addMsgHandler( "/shutdown", shutdown_callback )
-
+atexit.register(exit_handler)
 
 #ARG 1 MAC Address
 if __name__ == "__main__":
