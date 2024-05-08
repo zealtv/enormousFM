@@ -31,7 +31,7 @@
 sleep 5
 
 #Running Jack at 22050khz
-jackd -P70 -p16 -t2000 -d alsa -dhw:DigiAMP -p 128 -n 3 -r 44100 -s &
+jackd -P70 -p16 -t2000 -d alsa -dhw:Device -p 128 -n 3 -r 44100 -s &
 
 # leave enough time for jack to start before launching PD
 sleep 10
