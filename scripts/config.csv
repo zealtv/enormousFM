@@ -1,3 +1,4 @@
 MAC, ID, POSX, POSY, NOTES
 00:00:00:00:00:00, 0, 0, 0, test
 d8:3a:dd:bb:27:87, 1, 0, 0, radio one
+d8:3a:dd:bb:28:06, 2, 0, 0, radio two
