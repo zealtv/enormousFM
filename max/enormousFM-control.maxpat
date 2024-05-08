@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 53.0, 142.0, 967.0, 740.0 ],
+		"rect" : [ 195.0, 162.0, 1004.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -179,7 +179,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 729.0, 1211.0, 101.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "/all ard ledhue $1"
 				}
 
@@ -722,8 +721,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 38.0, 66.0, 22.0 ],
-					"text" : "/all noise 1"
+					"patching_rect" : [ 127.0, 198.0, 61.0, 22.0 ],
+					"text" : "/2 noise 0"
 				}
 
 			}
@@ -1308,6 +1307,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-43", 0 ]
 				}
 
 			}
