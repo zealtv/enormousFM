@@ -80,7 +80,7 @@ sudo cp /lib/pd/extra/* ./
 sudo chown -R pi ./*
 
 #install pip
-sudo apt-get pip
+sudo apt-get install pip
 
 #make python virtual environment
 cd ~
