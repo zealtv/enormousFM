@@ -40,7 +40,12 @@ def update_callback(path='', tags='', args='', source=''):
     update_script = os.path.join(directory, "update.sh")
     print("UPDATE!")
     os.system(update_script)
-        
+
+def updatesamples_callback(path='', tags='', args='', source=''):
+    directory = os.path.dirname(os.path.realpath(__file__))
+    update_script = os.path.join(directory, "updatesamples.sh")
+    print("UPDATE SAMPLES!")
+    os.system(update_script)        
 
 def shutdown_callback(path='', tags='', args='', source=''):
     print("SHUTDOWN!")
@@ -56,6 +61,7 @@ def exit_handler():
 
 server.addMsgHandler( "/config", config_callback )
 server.addMsgHandler( "/update", update_callback )
+server.addMsgHandler( "/updatesamples", updatesamples_callback )
 server.addMsgHandler( "/shutdown", shutdown_callback )
 server.addMsgHandler( "/reboot", reboot_callback )
 atexit.register(exit_handler)
