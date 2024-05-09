@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1126.0, 823.0 ],
+		"rect" : [ 769.0, 99.0, 394.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-167",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 509.0, 367.0, 201.0, 22.0 ],
+					"text" : "/all ard ledarray 0 0 0 0 0 1 0 0 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-166",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 509.0, 340.0, 201.0, 22.0 ],
+					"text" : "/all ard ledarray 1 0 0 0 0 0 0 0 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-164",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 607.0, 265.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-162",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 579.0, 303.0, 176.0, 22.0 ],
+					"text" : "/all ard leds 0.1 2000 0.9 2000"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-160",
 					"maxclass" : "newobj",
@@ -466,7 +514,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 154.0, 967.0, 50.0, 35.0 ],
-					"text" : "/rpt 1. d 81."
+					"text" : "/rpt 1. d 32."
 				}
 
 			}
@@ -553,7 +601,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 519.0, 93.0, 22.0 ],
+					"patching_rect" : [ 103.0, 547.0, 93.0, 22.0 ],
 					"text" : "/updatesamples"
 				}
 
@@ -613,7 +661,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.0, 551.0, 46.0, 22.0 ],
+					"patching_rect" : [ 200.0, 523.0, 46.0, 22.0 ],
 					"text" : "/reboot"
 				}
 
@@ -686,7 +734,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 522.0, 480.0, 161.0, 22.0 ],
+					"patching_rect" : [ 522.0, 525.0, 161.0, 22.0 ],
 					"text" : "/all sample path ../../samples"
 				}
 
@@ -961,7 +1009,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 155.0, 551.0, 63.0, 22.0 ],
+					"patching_rect" : [ 200.0, 547.0, 63.0, 22.0 ],
 					"text" : "/shutdown"
 				}
 
@@ -973,7 +1021,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 551.0, 49.0, 22.0 ],
+					"patching_rect" : [ 103.0, 523.0, 49.0, 22.0 ],
 					"text" : "/update"
 				}
 
@@ -1015,24 +1063,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-39",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 551.0, 150.0, 33.0 ],
-					"text" : "set ID and POS \nof local instance"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 220.5, 551.0, 44.0, 22.0 ],
+					"patching_rect" : [ 265.5, 547.0, 44.0, 22.0 ],
 					"text" : "/config"
 				}
 
@@ -1141,7 +1177,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 500.0, 520.0, 51.0, 22.0 ],
+					"patching_rect" : [ 500.0, 565.0, 51.0, 22.0 ],
 					"text" : "s to-osc"
 				}
 
@@ -1154,7 +1190,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 500.0, 415.0, 50.0, 22.0 ]
+					"patching_rect" : [ 500.0, 460.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1165,7 +1201,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 500.0, 448.0, 116.0, 22.0 ],
+					"patching_rect" : [ 500.0, 493.0, 116.0, 22.0 ],
 					"text" : "/all sample folder $1"
 				}
 
@@ -1505,6 +1541,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-160", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-162", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-162", 0 ],
+					"source" : [ "obj-164", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-166", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-167", 0 ]
 				}
 
 			}
