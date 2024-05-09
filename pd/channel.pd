@@ -107,7 +107,7 @@
 #X text 36 572 ARDUINO --------------------------;
 #X obj 39 605 r \$0-in;
 #X obj 39 635 route ard;
-#N canvas -88 306 793 479 ARDUINO_MODULE 1;
+#N canvas 0 306 793 479 ARDUINO_MODULE 1;
 #X obj 292 166 route d;
 #X msg 76 313 needle \$1;
 #X floatatom 292 191 5 0 0 1 distance - - 0;
@@ -143,7 +143,6 @@
 #X connect 4 0 10 0;
 #X connect 5 0 11 0;
 #X connect 13 0 0 0;
-#X connect 13 0 18 0;
 #X connect 14 0 1 0;
 #X connect 14 1 15 0;
 #X connect 15 1 5 0;
