@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 769.0, 99.0, 394.0, 823.0 ],
+		"rect" : [ 623.0, 99.0, 540.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 66.0, 261.0, 314.0, 22.0 ],
+					"text" : "/all ard sequence read seq/ard/scan, /all ard sequence go"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-167",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 509.0, 367.0, 201.0, 22.0 ],
-					"text" : "/all ard ledarray 0 0 0 0 0 1 0 0 0 0 0"
+					"patching_rect" : [ 509.0, 367.0, 191.0, 22.0 ],
+					"text" : "/all ard ledarray 0 0 0 0 0 1 0 0 0 0"
 				}
 
 			}
@@ -57,8 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 509.0, 340.0, 201.0, 22.0 ],
-					"text" : "/all ard ledarray 1 0 0 0 0 0 0 0 0 0 0"
+					"patching_rect" : [ 509.0, 340.0, 191.0, 22.0 ],
+					"text" : "/all ard ledarray 1 0 0 0 0 0 0 0 0 0"
 				}
 
 			}
@@ -81,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 579.0, 303.0, 176.0, 22.0 ],
+					"patching_rect" : [ 579.0, 303.0, 170.0, 22.0 ],
 					"text" : "/all ard leds 0.1 2000 0.9 2000"
 				}
 
@@ -1569,6 +1581,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-169", 0 ]
 				}
 
 			}
