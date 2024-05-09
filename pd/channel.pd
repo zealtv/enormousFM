@@ -107,7 +107,7 @@
 #X text 36 572 ARDUINO --------------------------;
 #X obj 39 605 r \$0-in;
 #X obj 39 635 route ard;
-#N canvas 0 306 793 479 ARDUINO_MODULE 1;
+#N canvas -26 311 793 479 ARDUINO_MODULE 1;
 #X obj 292 166 route d;
 #X msg 76 313 needle \$1;
 #X floatatom 292 191 5 0 0 1 distance - - 0;
@@ -133,10 +133,8 @@
 #X obj 799 76 r \$0-dump;
 #X obj 63 60 declare -path ./bop/bop.p;
 #X obj 873 272 bop.p.param \$0 leds;
-#X obj 844 359 r \$0-get-leds;
 #X msg 844 408 leds \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1;
 #X obj 844 435 s ard-out;
-#X floatatom 1000 312 5 0 0 0 - - - 0;
 #X connect 0 0 2 0;
 #X connect 1 0 9 0;
 #X connect 3 0 12 0;
@@ -150,9 +148,8 @@
 #X connect 17 1 19 0;
 #X connect 17 1 14 0;
 #X connect 19 0 18 0;
-#X connect 24 1 28 0;
+#X connect 24 1 25 0;
 #X connect 25 0 26 0;
-#X connect 26 0 27 0;
 #X restore 39 664 pd ARDUINO_MODULE;
 #X obj 39 703 s \$0-rpt;
 #X connect 4 0 5 0;
