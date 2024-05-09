@@ -107,7 +107,7 @@
 #X text 36 572 ARDUINO --------------------------;
 #X obj 39 605 r \$0-in;
 #X obj 39 635 route ard;
-#N canvas 307 327 1163 548 ARDUINO_MODULE 1;
+#N canvas -88 306 793 479 ARDUINO_MODULE 1;
 #X obj 292 166 route d;
 #X msg 76 313 needle \$1;
 #X floatatom 292 191 5 0 0 1 distance - - 0;
@@ -136,6 +136,7 @@
 #X obj 844 359 r \$0-get-leds;
 #X msg 844 408 leds \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1;
 #X obj 844 435 s ard-out;
+#X floatatom 1000 312 5 0 0 0 - - - 0;
 #X connect 0 0 2 0;
 #X connect 1 0 9 0;
 #X connect 3 0 12 0;
@@ -145,12 +146,12 @@
 #X connect 13 0 18 0;
 #X connect 14 0 1 0;
 #X connect 14 1 15 0;
-#X connect 15 0 4 0;
 #X connect 15 1 5 0;
 #X connect 15 2 3 0;
 #X connect 17 1 19 0;
 #X connect 17 1 14 0;
 #X connect 19 0 18 0;
+#X connect 24 1 28 0;
 #X connect 25 0 26 0;
 #X connect 26 0 27 0;
 #X restore 39 664 pd ARDUINO_MODULE;
