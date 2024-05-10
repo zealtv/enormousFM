@@ -65,7 +65,7 @@
 #X obj 256 327 +~;
 #X obj 193 131 *~ 0.75;
 #X obj 456 197 expr 1 - ($f1 - 9)/72;
-#X obj 424 335 pow~ 6;
+#X obj 424 335 pow~ 4;
 #X connect 0 0 1 0;
 #X connect 2 0 5 0;
 #X connect 3 0 1 0;
