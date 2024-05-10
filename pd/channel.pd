@@ -106,7 +106,7 @@
 #X msg 236 316 read seq/load \, loop 0 \, go;
 #X obj 639 742 r \$0-in;
 #X obj 733 904 s \$0-rpt;
-#N canvas 0 37 735 891 module.leds 0;
+#N canvas 0 37 735 891 module.leds 1;
 #X msg 600 162 needle \$1;
 #X msg 291 662 ledhue \$1;
 #X msg 298 457 ledsat \$1;
@@ -152,7 +152,7 @@
 #X obj 372 152 route sequence;
 #X obj 446 363 route array, f 64;
 #X obj 445 528 list;
-#X msg 478 486 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1;
+#X msg 489 470 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1;
 #X obj 266 426 t b f;
 #X obj 266 519 s \$0-updateleds;
 #X obj 259 723 s \$0-updateleds;
@@ -160,8 +160,8 @@
 #X obj 465 399 r \$0-updateleds;
 #X obj 143 398 bop.p.param \$0 sat 1;
 #X obj 136 593 bop.p.param \$0 hue 220;
-#X obj 472 450 bop.p.param \$0 all 1;
-#X obj 463 426 delay 5;
+#X obj 483 434 bop.p.param \$0 all 1;
+#X obj 483 497 t b l;
 #X connect 0 0 5 0;
 #X connect 1 0 8 0;
 #X connect 2 0 7 0;
@@ -200,16 +200,17 @@
 #X connect 42 0 43 0;
 #X connect 42 1 35 0;
 #X connect 43 0 17 0;
-#X connect 44 0 43 0;
+#X connect 44 0 53 0;
 #X connect 45 0 46 0;
 #X connect 45 1 2 0;
 #X connect 48 0 47 0;
 #X connect 48 1 1 0;
-#X connect 49 0 53 0;
+#X connect 49 0 43 0;
 #X connect 50 1 45 0;
 #X connect 51 1 48 0;
 #X connect 52 1 44 0;
 #X connect 53 0 43 0;
+#X connect 53 1 43 1;
 #X restore 609 831 pd module.leds;
 #X obj 974 316 route d;
 #X floatatom 974 341 5 0 0 1 distance - - 0;
