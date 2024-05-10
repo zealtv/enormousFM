@@ -250,16 +250,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-281",
-					"linecount" : 15,
+					"linecount" : 16,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 304.25, 316.0, 249.0, 223.0 ],
+					"patching_rect" : [ 304.25, 316.0, 249.0, 236.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 14,
-					"presentation_rect" : [ 303.25, 347.0, 251.0, 210.0 ],
-					"text" : ";\rto-osc /all gen stop;\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 20;\rto-osc /all noise sensor 0.6;\rto-osc /all gain sensor 2;\rto-osc /all leds hue 0.09;\rto-osc /all leds sat 1;\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence read seq/leds/scan;\rto-osc /all leds sequence go;\r"
+					"presentation_rect" : [ 303.25, 347.0, 263.0, 210.0 ],
+					"text" : ";\rto-osc /all gen stop;\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 20;\rto-osc /all noise sensor 0.6;\rto-osc /all gain sensor 2;\rto-osc /all leds hue 0.09;\rto-osc /all leds sat 1;\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence read seq/leds/breathe;\rto-osc /all leds sequence go;\r"
 				}
 
 			}
@@ -969,7 +969,7 @@
 					"patching_rect" : [ 447.0, 481.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 605.0, 229.0, 24.0 ],
-					"text" : "/all gain 0.45",
+					"text" : "/all leds all 0",
 					"wordwrap" : 0
 				}
 
