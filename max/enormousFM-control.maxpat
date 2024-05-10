@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1026.0, 823.0 ],
+		"rect" : [ 309.0, 99.0, 751.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -221,7 +221,7 @@
 					"patching_rect" : [ 994.0, 849.0, 190.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 12.0, 92.75, 24.0 ],
-					"text" : "Target: 1"
+					"text" : "Target: ALL"
 				}
 
 			}
@@ -251,7 +251,7 @@
 					"patching_rect" : [ 599.0, 983.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 140.0, 178.0, 24.0 ],
-					"text" : "/all ard leds 0.",
+					"text" : "/all leds array 1 1 1 1 1 1 1 1 1 1",
 					"wordwrap" : 0
 				}
 
@@ -443,7 +443,7 @@
 					"patching_rect" : [ 737.0, 729.0, 381.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 228.25, 38.0, 201.25, 24.0 ],
-					"text" : "gain 1",
+					"text" : "leds array 1 1 1 1 1 1 1 1 1 1",
 					"textcolor" : [ 0.149019607843137, 0.149019607843137, 0.149019607843137, 1.0 ],
 					"wordwrap" : 0
 				}
@@ -452,14 +452,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-172",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 294.0, 126.0, 22.0 ],
+					"patching_rect" : [ 66.0, 294.0, 126.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.25, 434.0, 126.0, 22.0 ],
-					"text" : "/all ard sequence stop"
+					"presentation_rect" : [ 228.25, 404.0, 131.0, 22.0 ],
+					"text" : "/all leds sequence stop"
 				}
 
 			}
@@ -473,9 +474,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 66.0, 248.0, 323.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 228.25, 370.0, 247.0, 35.0 ],
-					"text" : "/all leds sequence loop 1, /all leds sequence read seq/ard/scan, /all leds sequence go"
+					"presentation_rect" : [ 228.25, 370.0, 467.0, 22.0 ],
+					"text" : "/all leds sequence loop 1, /all leds sequence read seq/leds/scan, /all leds sequence go"
 				}
 
 			}
