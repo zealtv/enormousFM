@@ -104,7 +104,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 7,
 					"presentation_rect" : [ 303.25, 317.0, 251.0, 116.0 ],
-					"text" : ";\rto-osc /all sample path ../../samples/002static;\rto-osc /0 sample folder 0;\rto-osc /1 sample folder 1;\rto-osc /2 sample folder 2;\rto-osc /all 0 127;\rto-osc /all noise sensor 1;\r"
+					"text" : ";\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 0 127;\rto-osc /all noise sensor 1;\r"
 				}
 
 			}
@@ -149,7 +149,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 10,
 					"presentation_rect" : [ 303.25, 128.0, 249.0, 156.0 ],
-					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /0 sample folder 0;\rto-osc /1 sample folder 1;\rto-osc /2 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.5;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\r"
+					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.5;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\r"
 				}
 
 			}
@@ -784,7 +784,7 @@
 					"patching_rect" : [ 488.5, 194.0, 190.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 93.0, 38.0, 92.75, 24.0 ],
-					"text" : "Target: ALL"
+					"text" : "Target: 2"
 				}
 
 			}
@@ -814,7 +814,7 @@
 					"patching_rect" : [ 447.0, 481.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 515.0, 178.0, 24.0 ],
-					"text" : "/all noise 0.",
+					"text" : "/2 report 0",
 					"wordwrap" : 0
 				}
 
