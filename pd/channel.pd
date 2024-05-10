@@ -43,7 +43,7 @@
 #X text 532 411 sample;
 #X obj 664 558 r \$0-in;
 #X obj 664 588 route noise;
-#N canvas 580 272 666 488 noise 0;
+#N canvas 196 245 666 488 noise 0;
 #X obj 126 51 inlet~;
 #X obj 133 458 outlet~;
 #X msg 212 157 \$1 10;
@@ -78,7 +78,7 @@
 #X connect 12 0 10 0;
 #X connect 13 0 16 0;
 #X connect 14 0 2 0;
-#X connect 14 0 15 0;
+#X connect 14 1 15 0;
 #X connect 15 0 16 1;
 #X connect 16 0 17 0;
 #X connect 17 0 18 0;
