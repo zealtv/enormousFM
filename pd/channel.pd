@@ -64,7 +64,7 @@
 #X obj 664 558 r \$0-in;
 #X obj 664 588 route noise;
 #N canvas 0 244 666 488 noise 0;
-#X obj 126 51 inlet~;
+#X obj 126 32 inlet~;
 #X obj 133 458 outlet~;
 #X msg 256 157 \$1 10;
 #X obj 193 376 *~;
@@ -84,8 +84,11 @@
 #X obj 256 327 +~;
 #X obj 424 335 pow~ 4;
 #X obj 163 122 noise~;
-#X obj 168 270 lop~ 4000;
+#X obj 148 270 lop~ 4000;
 #X obj 164 160 pow~ 16;
+#X obj 147 70 noise~;
+#X obj 148 224 *~;
+#X obj 147 94 pow~ 2;
 #X connect 0 0 1 0;
 #X connect 2 0 5 0;
 #X connect 3 0 1 0;
@@ -106,7 +109,10 @@
 #X connect 18 0 17 1;
 #X connect 19 0 21 0;
 #X connect 20 0 3 0;
-#X connect 21 0 20 0;
+#X connect 21 0 23 1;
+#X connect 22 0 24 0;
+#X connect 23 0 20 0;
+#X connect 24 0 23 0;
 #X restore 611 626 pd noise;
 #X text 534 626 noise;
 #X obj 1028 1495 route report;
