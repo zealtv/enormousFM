@@ -144,7 +144,7 @@
 #X obj 100 307 expr 1 - ($f1 - 9)/72;
 #X obj 100 331 clip 0 1;
 #X text 191 333 normalize and invert;
-#X obj 66 213 < 8;
+#X obj 66 213 < 4;
 #X connect 0 0 3 0;
 #X connect 1 0 12 0;
 #X connect 2 0 1 0;
