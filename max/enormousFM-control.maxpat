@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 381.0, 99.0, 689.0, 823.0 ],
+		"rect" : [ 381.0, 99.0, 783.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,73 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-289",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 593.0, 415.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 562.0, 237.0, 81.0, 33.0 ],
+					"text" : "leds light up with audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-288",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 578.0, 400.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 562.0, 426.0, 81.0, 20.0 ],
+					"text" : "leds breathe"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-285",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 535.0, -49.0, 87.0, 22.0 ],
+					"text" : "gain sensor $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 1,
+					"id" : "obj-286",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 535.0, -111.0, 25.0, 36.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 179.0, 113.5, 34.0, 36.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_linknames" : 1,
+							"parameter_longname" : "gain-sensor",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "sensor",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "gain-sensor"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-283",
 					"maxclass" : "message",
@@ -87,7 +154,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 303.25, 294.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 303.25, 295.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 303.25, 325.0, 150.0, 20.0 ],
 					"text" : "static and alive"
 				}
 
@@ -95,16 +162,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-281",
-					"linecount" : 8,
+					"linecount" : 14,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 304.25, 316.0, 249.0, 129.0 ],
+					"patching_rect" : [ 304.25, 316.0, 249.0, 210.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 7,
-					"presentation_rect" : [ 303.25, 317.0, 251.0, 116.0 ],
-					"text" : ";\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 0 127;\rto-osc /all noise sensor 1;\r"
+					"presentation_linecount" : 13,
+					"presentation_rect" : [ 303.25, 347.0, 251.0, 196.0 ],
+					"text" : ";\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 0 20;\rto-osc /all noise sensor 0.6;\rto-osc /all gain sensor 2;\rto-osc /all leds hue 0.09;\rto-osc /all leds sat 1;\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence read seq/leds/scan;\rto-osc /all leds sequence go;\r"
 				}
 
 			}
@@ -140,16 +207,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-275",
-					"linecount" : 10,
+					"linecount" : 12,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1138.0, -4.0, 249.0, 156.0 ],
+					"patching_rect" : [ 1138.0, -4.0, 249.0, 183.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 10,
-					"presentation_rect" : [ 303.25, 128.0, 249.0, 156.0 ],
-					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.5;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\r"
+					"presentation_linecount" : 12,
+					"presentation_rect" : [ 303.25, 128.0, 249.0, 183.0 ],
+					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.7;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all noise sensor 0;\r"
 				}
 
 			}
@@ -343,7 +410,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 535.0, -49.0, 48.0, 22.0 ],
+					"patching_rect" : [ 475.0, -49.0, 48.0, 22.0 ],
 					"text" : "gain $1"
 				}
 
@@ -357,7 +424,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 527.5, -121.0, 50.0, 63.0 ],
+					"patching_rect" : [ 467.5, -121.0, 50.0, 63.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 127.0, 113.5, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
@@ -784,7 +851,7 @@
 					"patching_rect" : [ 488.5, 194.0, 190.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 93.0, 38.0, 92.75, 24.0 ],
-					"text" : "Target: 2"
+					"text" : "Target: ALL"
 				}
 
 			}
@@ -814,7 +881,7 @@
 					"patching_rect" : [ 447.0, 481.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 515.0, 178.0, 24.0 ],
-					"text" : "/2 report 0",
+					"text" : "/all leds sequence go",
 					"wordwrap" : 0
 				}
 
@@ -2746,6 +2813,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-255", 0 ],
+					"source" : [ "obj-285", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-285", 0 ],
+					"source" : [ "obj-286", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -2978,6 +3059,7 @@
 			"obj-265" : [ "space", "space", 0 ],
 			"obj-266" : [ "density", "density", 0 ],
 			"obj-284" : [ "noise-sensor", "sensor", 0 ],
+			"obj-286" : [ "gain-sensor", "sensor", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,

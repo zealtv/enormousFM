@@ -16,4 +16,8 @@ rm -r /home/pi/enormousFM/samples/__MACOSX
 mv /home/pi/efm-temp/README.md /home/pi/enormousFM/samples/
 mv /home/pi/efm-temp/.gitignore /home/pi/enormousFM/samples/
 rm -r /home/pi/efm-temp
+#set permissions
+cd /home/pi/enormousFM/samples
+chown -R pi ./
+
 exit
