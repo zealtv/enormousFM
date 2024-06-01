@@ -1,4 +1,4 @@
-#N canvas 164 331 538 382 12;
+#N canvas 35 446 538 382 12;
 #X declare -path ./bop;
 #X obj 198 302 dac~;
 #X msg 19 245 \; pd dsp 1;
@@ -131,7 +131,7 @@
 #X text 415 31 print available devices;
 #X text 410 180 manually dis/connect;
 #X text 423 313 test message;
-#N canvas 92 129 770 628 filter-spikes 1;
+#N canvas 92 129 770 628 filter-spikes 0;
 #X obj 122 78 route d;
 #X obj 166 195 -;
 #X obj 163 159 f;
@@ -180,7 +180,7 @@
 #X connect 21 0 0 0;
 #X connect 21 1 22 0;
 #X connect 26 0 6 0;
-#X restore 359 82 pd ARD-IO;
+#X restore 359 112 pd ARD-IO;
 #X text 335 15 --- ARDUINO ---;
 #X text 187 16 --- OSC ---;
 #N canvas 606 294 482 182 variables 0;
@@ -199,7 +199,7 @@
 #X obj 198 224 r osc-in;
 #X obj 258 302 s osc-out;
 #X obj 359 53 r ard-out;
-#X obj 359 111 s ard-in, f 9;
+#X obj 359 141 s ard-in, f 9;
 #X text 192 185 --- AUDIO / LIGHT / MOTION / SENSING ---;
 #N canvas 63 100 450 300 ID 0;
 #X obj 105 64 r ID;
@@ -224,6 +224,19 @@
 #X connect 4 0 2 0;
 #X connect 5 0 1 0;
 #X restore 19 105 pd heartbeat;
+#N canvas 63 100 450 300 gate 0;
+#X obj 127 104 inlet;
+#X obj 235 105 inlet;
+#X obj 177 182 list prepend;
+#X obj 177 206 route 1;
+#X obj 177 230 outlet;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X restore 359 86 pd gate;
+#X f 12;
+#X obj 440 52 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 5 0 3 0;
@@ -231,4 +244,6 @@
 #X connect 11 0 0 0;
 #X connect 11 1 13 0;
 #X connect 12 0 11 0;
-#X connect 14 0 6 0;
+#X connect 14 0 19 0;
+#X connect 19 0 6 0;
+#X connect 20 0 19 1;

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 150.0, 99.0, 1014.0, 823.0 ],
+		"rect" : [ 34.0, 344.0, 692.0, 578.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,29 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-298",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 211.0, 1030.0, 323.0, 62.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 499.0, 1022.0, 263.0, 62.0 ],
+					"text" : ";\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence read seq/leds/breathe;\rto-osc /all leds sequence go"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-297",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 558.0, 933.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 661.0, 442.5, 153.0, 20.0 ],
+					"presentation_rect" : [ 712.0, 206.0, 153.0, 20.0 ],
 					"text" : "trying to decipher.... "
 				}
 
@@ -59,10 +75,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.0, 1047.0, 50.0, 545.0 ],
+					"patching_rect" : [ 526.0, 1047.0, 51.0, 545.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 9,
-					"presentation_rect" : [ 661.0, 464.5, 239.0, 143.0 ],
+					"presentation_rect" : [ 712.0, 228.0, 239.0, 143.0 ],
 					"text" : ";\rto-osc /all noise 0.05;\rto-osc /all sample path ../../samples/099old;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0;\rto-osc /all gen mode chat;\r"
 				}
 
@@ -88,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1416.5, 11.0, 51.0, 370.0 ],
+					"patching_rect" : [ 1416.5, 11.0, 53.0, 370.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 8,
 					"presentation_rect" : [ 303.25, 786.0, 170.0, 129.0 ],
@@ -113,16 +129,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-291",
-					"linecount" : 50,
+					"linecount" : 46,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.0, 604.0, 50.0, 692.0 ],
+					"patching_rect" : [ 323.0, 604.0, 53.0, 639.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 12,
 					"presentation_rect" : [ 303.25, 583.0, 276.0, 183.0 ],
-					"text" : ";\rto-osc /all leds sequence stop;\rto-osc /all leds all 0;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc 1 127;\r"
+					"text" : ";\rto-osc /all leds sequence stop;\rto-osc /all leds all 0;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 127;\r"
 				}
 
 			}
@@ -148,7 +164,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 578.0, 400.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 562.0, 426.0, 81.0, 20.0 ],
+					"presentation_rect" : [ 570.0, 426.0, 81.0, 20.0 ],
 					"text" : "leds breathe"
 				}
 
@@ -201,7 +217,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 660.75, -49.0, 93.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"text" : "noise sensor $1"
 				}
 
@@ -259,7 +274,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 14,
 					"presentation_rect" : [ 303.25, 347.0, 263.0, 210.0 ],
-					"text" : ";\rto-osc /all gen stop;\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 20;\rto-osc /all noise sensor 0.6;\rto-osc /all gain sensor 2;\rto-osc /all leds hue 0.09;\rto-osc /all leds sat 1;\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence read seq/leds/breathe;\rto-osc /all leds sequence go;\r"
+					"text" : ";\rto-osc /all gen stop;\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 20;\rto-osc /all noise sensor 0.8;\rto-osc /all gain sensor 2;\rto-osc /all leds hue 0.09;\rto-osc /all leds sat 1;\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence read seq/leds/breathe;\rto-osc /all leds sequence go;\r"
 				}
 
 			}
@@ -271,7 +286,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1401.5, -4.0, 50.0, 62.0 ],
+					"patching_rect" : [ 1401.5, -4.0, 51.0, 62.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 562.0, 128.0, 63.0, 49.0 ],
@@ -288,7 +303,7 @@
 					"patching_rect" : [ 1138.0, -32.5, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 303.25, 106.0, 150.0, 20.0 ],
-					"text" : "all chatting"
+					"text" : "code"
 				}
 
 			}
@@ -447,7 +462,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 597.75, -49.0, 54.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "noise $1"
 				}
 
@@ -969,7 +983,7 @@
 					"patching_rect" : [ 447.0, 481.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 605.0, 229.0, 24.0 ],
-					"text" : "/all leds all 0",
+					"text" : "/all 1 127",
 					"wordwrap" : 0
 				}
 
@@ -1625,7 +1639,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 951.0, 387.0, 50.0, 35.0 ],
+					"patching_rect" : [ 951.0, 387.0, 53.0, 35.0 ],
 					"text" : "/rpt 1. d 32."
 				}
 
@@ -1796,7 +1810,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 419.0, 884.0, 67.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "/2 noise $1"
 				}
 
