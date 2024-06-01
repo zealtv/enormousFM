@@ -236,7 +236,7 @@
 #X connect 3 0 4 0;
 #X restore 359 86 pd gate;
 #X f 12;
-#X obj 440 52 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 440 52 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 5 0 3 0;

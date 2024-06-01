@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1062.0, 823.0 ],
+		"rect" : [ 34.0, 99.0, 681.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,16 +70,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"linecount" : 11,
+					"linecount" : 8,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 392.0, 61.0, 50.0, 156.0 ],
+					"patching_rect" : [ 392.0, 61.0, 50.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 453.25, 27.0, 170.0, 62.0 ],
-					"text" : ";\rto-osc /all leds sequence stop;\r;\rto-osc /all leds mode react"
+					"text" : ";\rto-osc /all leds stop;\r;\rto-osc /all leds react"
 				}
 
 			}
@@ -136,7 +136,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1699.0, 603.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 453.25, 764.0, 81.0, 20.0 ],
+					"presentation_rect" : [ 372.0, 812.0, 81.0, 20.0 ],
 					"text" : "stop all"
 				}
 
@@ -152,7 +152,7 @@
 					"patching_rect" : [ 2080.5, 471.0, 53.0, 370.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 8,
-					"presentation_rect" : [ 453.25, 786.0, 170.0, 129.0 ],
+					"presentation_rect" : [ 453.25, 816.0, 170.0, 129.0 ],
 					"text" : ";\rto-osc /all gen stop;\rto-osc /all noise 0;\rto-osc /all noise sensor0;\rto-osc /all gain 0;\rto-osc /all gain sensor 0;\rto-osc /all leds sequence stop;\rto-osc /all leds all 0;\r"
 				}
 
@@ -166,7 +166,7 @@
 					"patching_rect" : [ 1688.0, 636.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 740.0, 644.0, 81.0, 33.0 ],
+					"presentation_rect" : [ 740.0, 659.0, 81.0, 33.0 ],
 					"text" : "leds light up with audio"
 				}
 
@@ -174,16 +174,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-291",
-					"linecount" : 53,
+					"linecount" : 52,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1637.0, 917.0, 53.0, 732.0 ],
+					"patching_rect" : [ 1637.0, 917.0, 53.0, 719.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 14,
-					"presentation_rect" : [ 453.25, 583.0, 276.0, 210.0 ],
-					"text" : ";\rto-osc /all leds hue 0.09, /all leds sat 1;\rto-osc /all leds sequence stop;\rto-osc /all leds react;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 127;\r"
+					"presentation_rect" : [ 453.25, 598.0, 276.0, 210.0 ],
+					"text" : ";\rto-osc /all leds stop;\rto-osc /all leds hue 0.09;\rto-osc /all leds sat 1;\rto-osc /all leds react;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 127;\r"
 				}
 
 			}
@@ -208,7 +208,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1688.0, 693.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 720.0, 426.0, 81.0, 20.0 ],
+					"presentation_rect" : [ 720.0, 441.0, 81.0, 20.0 ],
 					"text" : "leds breathe"
 				}
 
@@ -301,7 +301,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1439.25, 542.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 453.25, 325.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 289.25, 773.0, 150.0, 20.0 ],
 					"text" : "static and alive"
 				}
 
@@ -317,7 +317,7 @@
 					"patching_rect" : [ 1767.25, 888.0, 249.0, 236.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 14,
-					"presentation_rect" : [ 453.25, 347.0, 263.0, 210.0 ],
+					"presentation_rect" : [ 453.25, 377.0, 263.0, 210.0 ],
 					"text" : ";\rto-osc /all gen stop;\rto-osc /all sample path ../../samples/002static;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 20;\rto-osc /all noise sensor 0.8;\rto-osc /all gain sensor 2;\rto-osc /all leds hue 0.09;\rto-osc /all leds sat 1;\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence read seq/leds/breathe;\rto-osc /all leds sequence go;\r"
 				}
 
@@ -354,16 +354,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-275",
-					"linecount" : 15,
+					"linecount" : 16,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1480.0, 270.0, 249.0, 223.0 ],
+					"patching_rect" : [ 1480.0, 270.0, 249.0, 236.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 13,
-					"presentation_rect" : [ 453.25, 128.0, 506.0, 196.0 ],
-					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.5;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all gain 0.45;\rto-osc /all leds sequence loop 1, /all leds sequence read seq/leds/scan, /all leds sequence go;\r"
+					"presentation_linecount" : 16,
+					"presentation_rect" : [ 453.25, 128.0, 249.0, 236.0 ],
+					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.5;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all gain 0.45;\rto-osc /all leds sequence loop 1;\rto-osc /all leds sequence;\rto-osc read seq/leds/scan;\rto-osc /all leds sequence go;\r"
 				}
 
 			}
@@ -1027,7 +1027,7 @@
 					"patching_rect" : [ 391.0, 739.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 605.0, 229.0, 24.0 ],
-					"text" : "/all 1 127",
+					"text" : "/all leds react",
 					"wordwrap" : 0
 				}
 
