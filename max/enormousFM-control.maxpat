@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1068.0, 823.0 ],
+		"rect" : [ 34.0, 99.0, 1062.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 145.0, 377.0, 100.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 145.0, 377.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"linecount" : 9,
@@ -161,16 +174,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-291",
-					"linecount" : 46,
+					"linecount" : 47,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1637.0, 917.0, 53.0, 639.0 ],
+					"patching_rect" : [ 1637.0, 917.0, 53.0, 652.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 12,
 					"presentation_rect" : [ 453.25, 583.0, 276.0, 183.0 ],
-					"text" : ";\rto-osc /all leds sequence stop;\rto-osc /all leds all 0;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 127;\r"
+					"text" : ";\rto-osc /all leds sequence stop;\rto-osc /all leds mode react;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 127;\r"
 				}
 
 			}

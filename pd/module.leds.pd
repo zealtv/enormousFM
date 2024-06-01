@@ -16,7 +16,7 @@
 #X obj 642 748 list trim;
 #X obj 66 321 outlet~;
 #X obj 351 454 bop.module/sequence;
-#A saved all 0.2 0.95 5000 \; - 5000 \; all 0.95 0.2 5000 \; - 5000 \;;
+#A saved array 1 1 0 0 0 0 0 0 0 0 \; - 50 \; array 0 1 1 0 0 0 0 0 0 0 \; - 50 \; array 0 0 1 1 0 0 0 0 0 0 \; - 50 \; array 0 0 0 1 1 0 0 0 0 0 \; - 50 \; array 0 0 0 0 1 1 0 0 0 0 \; - 50 \; array 0 0 0 0 0 1 1 0 0 0 \; - 50 \; array 0 0 0 0 0 0 1 1 0 0 \; - 50 \; array 0 0 0 0 0 0 0 1 1 0 \; - 50 \; array 0 0 0 0 0 0 0 0 1 1 \; - 50 \; array 0 0 0 0 0 0 0 0 0 1 \; - 50 \; array 0 0 0 0 0 0 0 0 1 1 \; - 50 \; array 0 0 0 0 0 0 0 1 1 0 \; - 50 \; array 0 0 0 0 0 0 1 1 0 0 \; - 50 \; array 0 0 0 0 0 1 1 0 0 0 \; - 50 \; array 0 0 0 0 1 1 0 0 0 0 \; - 50 \; array 0 0 0 1 1 0 0 0 0 0 \; - 50 \; array 0 0 1 1 0 0 0 0 0 0 \; - 50 \; array 0 1 1 0 0 0 0 0 0 0 \; - 50 \; array 1 1 0 0 0 0 0 0 0 0 \; - 50 \;;
 #X obj 641 601 list;
 #X msg 659 533 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1 \$1;
 #X obj 1085 87 t b f;
@@ -58,7 +58,7 @@
 #X text 1034 717 todo:;
 #X obj 927 759 change;
 #X obj 927 659 metro 50;
-#X obj 1011 539 env~ 16384;
+#X obj 1011 539 env~ 4096;
 #X connect 0 0 4 0;
 #X connect 1 0 3 0;
 #X connect 5 0 14 0;
