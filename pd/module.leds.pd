@@ -29,7 +29,7 @@
 #X obj 501 61 bop.p.param \$0 all 1;
 #X obj 641 570 t b l;
 #X obj 77 142 s~ in;
-#X obj 1011 512 r~ in;
+#X obj 1011 480 r~ in;
 #X msg 927 389 1;
 #X obj 367 387 r \$0-stop;
 #X msg 367 420 stop;
@@ -59,6 +59,7 @@
 #X obj 927 759 change;
 #X obj 927 659 metro 50;
 #X obj 1011 539 env~ 4096;
+#X obj 1011 511 pow~ 2;
 #X connect 0 0 4 0;
 #X connect 1 0 3 0;
 #X connect 5 0 14 0;
@@ -80,7 +81,7 @@
 #X connect 25 1 47 0;
 #X connect 26 0 16 0;
 #X connect 26 1 16 1;
-#X connect 28 0 57 0;
+#X connect 28 0 58 0;
 #X connect 29 0 46 0;
 #X connect 30 0 31 0;
 #X connect 31 0 15 0;
@@ -103,3 +104,4 @@
 #X connect 55 0 45 0;
 #X connect 56 0 44 0;
 #X connect 57 0 35 0;
+#X connect 58 0 57 0;

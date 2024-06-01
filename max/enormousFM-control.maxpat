@@ -174,16 +174,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-291",
-					"linecount" : 47,
+					"linecount" : 53,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1637.0, 917.0, 53.0, 652.0 ],
+					"patching_rect" : [ 1637.0, 917.0, 53.0, 732.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 12,
-					"presentation_rect" : [ 453.25, 583.0, 276.0, 183.0 ],
-					"text" : ";\rto-osc /all leds sequence stop;\rto-osc /all leds mode react;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 127;\r"
+					"presentation_linecount" : 14,
+					"presentation_rect" : [ 453.25, 583.0, 276.0, 210.0 ],
+					"text" : ";\rto-osc /all leds hue 0.09, /all leds sat 1;\rto-osc /all leds sequence stop;\rto-osc /all leds react;\rto-osc /all gen stop;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all sample path ../../samples/003broadcast;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all 1 127;\r"
 				}
 
 			}
@@ -1027,7 +1027,7 @@
 					"patching_rect" : [ 391.0, 739.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 605.0, 229.0, 24.0 ],
-					"text" : "/all leds all 0",
+					"text" : "/all 1 127",
 					"wordwrap" : 0
 				}
 

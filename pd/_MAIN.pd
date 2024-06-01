@@ -1,4 +1,4 @@
-#N canvas 35 446 538 382 12;
+#N canvas 826 510 538 382 12;
 #X declare -path ./bop;
 #X obj 198 302 dac~;
 #X msg 19 245 \; pd dsp 1;
@@ -80,7 +80,7 @@
 #X restore 199 81 pd OSC-IO;
 #X obj 199 110 s osc-in, f 9;
 #X obj 199 52 r osc-out;
-#N canvas 445 154 664 731 ARD-IO 1;
+#N canvas 445 154 664 731 ARD-IO 0;
 #X obj 30 425 oscparse;
 #X obj 38 30 inlet;
 #X obj 420 105 s \$0-to-comport;
@@ -236,7 +236,7 @@
 #X connect 3 0 4 0;
 #X restore 359 86 pd gate;
 #X f 12;
-#X obj 440 52 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
+#X obj 440 52 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 5 0 3 0;
