@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 99.0, 1028.0, 823.0 ],
+		"rect" : [ 34.0, 99.0, 1068.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,22 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"linecount" : 9,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 694.0, 56.0, 50.0, 143.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 694.0, 56.0, 244.0, 49.0 ],
+					"text" : ";\rto-osc /0 sample path ../../samples/001code;\r"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"linecount" : 11,
@@ -78,7 +94,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 502.0, 1191.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 862.0, 206.0, 153.0, 20.0 ],
+					"presentation_rect" : [ 874.0, 392.0, 153.0, 20.0 ],
 					"text" : "trying to decipher.... "
 				}
 
@@ -94,7 +110,7 @@
 					"patching_rect" : [ 1544.0, 943.5, 51.0, 545.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 9,
-					"presentation_rect" : [ 862.0, 228.0, 239.0, 143.0 ],
+					"presentation_rect" : [ 887.0, 440.0, 239.0, 143.0 ],
 					"text" : ";\rto-osc /all noise 0.05;\rto-osc /all sample path ../../samples/099old;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0;\rto-osc /all gen mode chat;\r"
 				}
 
@@ -166,9 +182,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1703.0, 708.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 712.0, 237.0, 81.0, 33.0 ],
-					"text" : "leds light up with audio"
+					"presentation_rect" : [ 724.0, 334.0, 81.0, 20.0 ],
+					"text" : "leds scan"
 				}
 
 			}
@@ -305,7 +320,7 @@
 					"patching_rect" : [ 1743.5, 270.0, 51.0, 62.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 712.0, 128.0, 63.0, 49.0 ],
+					"presentation_rect" : [ 964.0, 56.0, 63.0, 49.0 ],
 					"text" : ";\rto-osc /all gen stop"
 				}
 
@@ -326,16 +341,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-275",
-					"linecount" : 12,
+					"linecount" : 15,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1480.0, 270.0, 249.0, 183.0 ],
+					"patching_rect" : [ 1480.0, 270.0, 249.0, 223.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 12,
-					"presentation_rect" : [ 453.25, 128.0, 249.0, 183.0 ],
-					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.5;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all gain 0.45;\r"
+					"presentation_linecount" : 13,
+					"presentation_rect" : [ 453.25, 128.0, 506.0, 196.0 ],
+					"text" : ";\rto-osc /all sample path ../../samples/001code;\rto-osc /1 sample folder 0;\rto-osc /2 sample folder 1;\rto-osc /3 sample folder 2;\rto-osc /all gen density 0.7;\rto-osc /all gen space 0.5;\rto-osc /all gen mode chat;\rto-osc /all noise sensor 0;\rto-osc /all noise 0;\rto-osc /all gain sensor 0;\rto-osc /all gain 0.45;\rto-osc /all leds sequence loop 1, /all leds sequence read seq/leds/scan, /all leds sequence go;\r"
 				}
 
 			}
@@ -362,7 +377,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 928.0, 81.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 163.375, 392.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 163.375, 407.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -389,7 +404,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 876.5, 81.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.875, 392.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 118.875, 407.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -439,7 +454,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 800.0, 137.0, 55.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 416.0, 55.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 431.0, 55.0, 22.0 ],
 					"text" : "gen stop"
 				}
 
@@ -465,7 +480,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 707.5, 137.0, 88.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 392.0, 88.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 407.0, 88.0, 22.0 ],
 					"text" : "gen mode chat"
 				}
 
@@ -969,7 +984,7 @@
 					"patching_rect" : [ 432.5, 452.0, 190.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 93.0, 38.0, 92.75, 24.0 ],
-					"text" : "Target: 0"
+					"text" : "Target: ALL"
 				}
 
 			}
@@ -999,7 +1014,7 @@
 					"patching_rect" : [ 391.0, 739.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 605.0, 229.0, 24.0 ],
-					"text" : "/0 1 127",
+					"text" : "/all leds all 0",
 					"wordwrap" : 0
 				}
 
@@ -1191,7 +1206,7 @@
 					"patching_rect" : [ 160.5, 339.0, 381.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 42.0, 87.0, 351.25, 20.0 ],
-					"text" : "sample path ../../samples/001code",
+					"text" : "leds react",
 					"textcolor" : [ 0.149019607843137, 0.149019607843137, 0.149019607843137, 1.0 ],
 					"wordwrap" : 0
 				}
