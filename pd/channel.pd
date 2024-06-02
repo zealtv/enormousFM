@@ -57,7 +57,7 @@
 #X restore 641 1252 pd gain;
 #X text 585 1254 gain;
 #X text 562 141 sample;
-#N canvas 0 244 666 488 noise 1;
+#N canvas 0 244 806 488 noise 0;
 #X obj 126 32 inlet~;
 #X obj 133 458 outlet~;
 #X msg 256 157 \$1 10;
@@ -73,8 +73,8 @@
 #X obj 340 93 route float;
 #X obj 341 182 route sensor;
 #X obj 423 241 *;
-#X msg 424 278 \$1 10;
-#X obj 424 308 line~;
+#X msg 427 306 \$1 10;
+#X obj 427 336 line~;
 #X obj 256 327 +~;
 #X obj 163 122 noise~;
 #X obj 148 270 lop~ 4000;
@@ -82,7 +82,8 @@
 #X obj 147 70 noise~;
 #X obj 148 224 *~;
 #X obj 147 94 pow~ 2;
-#X obj 424 335 pow~ 0.5;
+#X obj 427 363 pow~ 0.5;
+#X obj 423 280 expr if($f1<0.1 \, 0 \, $f1*2);
 #X connect 0 0 1 0;
 #X connect 2 0 5 0;
 #X connect 3 0 1 0;
@@ -96,7 +97,7 @@
 #X connect 12 0 2 0;
 #X connect 12 1 13 0;
 #X connect 13 0 14 1;
-#X connect 14 0 15 0;
+#X connect 14 0 25 0;
 #X connect 15 0 16 0;
 #X connect 16 0 24 0;
 #X connect 17 0 3 1;
@@ -107,6 +108,7 @@
 #X connect 22 0 19 0;
 #X connect 23 0 22 0;
 #X connect 24 0 17 1;
+#X connect 25 0 15 0;
 #X restore 641 356 pd noise;
 #X text 564 356 noise;
 #X obj 1058 1235 route report;
