@@ -1,8 +1,8 @@
-#N canvas 0 37 735 891 12;
+#N canvas 0 37 1470 891 12;
 #X declare -path ./bop/bop.p;
 #X msg 853 118 ledhue \$1;
 #X msg 1117 118 ledsat \$1;
-#X obj 700 794 s ard-out;
+#X obj 700 844 s ard-out;
 #X obj 1117 141 s ard-out;
 #X obj 853 148 s ard-out;
 #X obj 67 101 inlet~, f 25;
@@ -12,8 +12,8 @@
 #X obj 405 103 r \$0-params;
 #X obj 374 59 r \$0-dump;
 #X obj 63 60 declare -path ./bop/bop.p;
-#X obj 700 703 list prepend leds;
-#X obj 700 747 list trim;
+#X obj 700 753 list prepend leds;
+#X obj 700 797 list trim;
 #X obj 66 321 outlet~;
 #X obj 353 532 bop.module/sequence;
 #A saved array 1 1 0 0 0 0 0 0 0 0 \; - 50 \; array 0 1 1 0 0 0 0 0 0 0 \; - 50 \; array 0 0 1 1 0 0 0 0 0 0 \; - 50 \; array 0 0 0 1 1 0 0 0 0 0 \; - 50 \; array 0 0 0 0 1 1 0 0 0 0 \; - 50 \; array 0 0 0 0 0 1 1 0 0 0 \; - 50 \; array 0 0 0 0 0 0 1 1 0 0 \; - 50 \; array 0 0 0 0 0 0 0 1 1 0 \; - 50 \; array 0 0 0 0 0 0 0 0 1 1 \; - 50 \; array 0 0 0 0 0 0 0 0 0 1 \; - 50 \; array 0 0 0 0 0 0 0 0 1 1 \; - 50 \; array 0 0 0 0 0 0 0 1 1 0 \; - 50 \; array 0 0 0 0 0 0 1 1 0 0 \; - 50 \; array 0 0 0 0 0 1 1 0 0 0 \; - 50 \; array 0 0 0 0 1 1 0 0 0 0 \; - 50 \; array 0 0 0 1 1 0 0 0 0 0 \; - 50 \; array 0 0 1 1 0 0 0 0 0 0 \; - 50 \; array 0 1 1 0 0 0 0 0 0 0 \; - 50 \; array 1 1 0 0 0 0 0 0 0 0 \; - 50 \;;
