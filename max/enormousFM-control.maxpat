@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 402.0, 123.0, 720.0, 773.0 ],
+		"rect" : [ 429.0, 145.0, 686.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -201,6 +201,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -360,7 +361,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 9,
 									"presentation_rect" : [ 453.25, 22.0, 170.0, 143.0 ],
-									"text" : ";\rcmd /all leds stop;\rcmd /all leds hue 0.09;\rcmd /all leds sat 1;\rcmd /all leds sequence loop 1;\rcmd /all gain 1;\rcmd /1 sample folder 0;\rcmd /2 sample folder 1;\rcmd /3 sample folder 2;\r"
+									"text" : ";\rcmd /all leds stop;\rcmd /all leds sequence loop 1;\rcmd /all gain 1;\rcmd /1 sample folder 0;\rcmd /2 sample folder 1;\rcmd /3 sample folder 2;\rcmd /all leds hue 0.09;\rcmd /all leds sat 1;\r"
 								}
 
 							}
@@ -551,7 +552,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 12,
 									"presentation_rect" : [ 453.25, 263.0, 239.0, 183.0 ],
-									"text" : ";\rcmd /all sample path ../../samples/001code;\rcmd /all gen density 0.7;\rcmd /all gen space 0.5;\rcmd /all gen mode chat;\rcmd /all noise sensor 0;\rcmd /all noise 0;\rcmd /all gain sensor 0;\rcmd /all leds stop;\rcmd /all leds sequence read seq/leds/scan;\rcmd /all leds sequence go;\rcmd /all leds react 1;\r"
+									"text" : ";\rcmd /all sample path ../../samples/001code;\rcmd /all gen density 0.7;\rcmd /all gen space 0.8;\rcmd /all gen mode chat;\rcmd /all noise sensor 0;\rcmd /all noise 0;\rcmd /all gain sensor 0;\rcmd /all leds stop;\rcmd /all leds sequence read seq/leds/scan;\rcmd /all leds sequence go;\rcmd /all leds react 1;\r"
 								}
 
 							}
@@ -1371,7 +1372,7 @@
 					"patching_rect" : [ 391.0, 739.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 434.0, 94.0, 229.0, 24.0 ],
-					"text" : "/3 sample folder 2",
+					"text" : "/all gain 0.464567",
 					"wordwrap" : 0
 				}
 
