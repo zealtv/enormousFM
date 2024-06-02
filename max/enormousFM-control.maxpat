@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 429.0, 145.0, 686.0, 525.0 ],
+		"rect" : [ 416.0, 114.0, 686.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -204,6 +204,32 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-5",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 328.0, 381.0, 150.0, 47.0 ],
+									"text" : "todo: react should mult here, not add.  add in next section"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 207.0, 659.0, 150.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 209.0, 659.0, 81.0, 33.0 ],
+									"text" : "react stays on"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -272,16 +298,16 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-44",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 32.0, 594.5, 163.0, 62.0 ],
+									"patching_rect" : [ 32.0, 594.5, 103.0, 49.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 3,
-									"presentation_rect" : [ 453.25, 476.0, 119.0, 62.0 ],
-									"text" : ";\rcmd /all gen stop;\rcmd /all leds react 0;\r"
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 453.25, 476.0, 119.0, 49.0 ],
+									"text" : ";\rcmd /all gen stop;\r"
 								}
 
 							}
@@ -498,16 +524,16 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-281",
-									"linecount" : 9,
+									"linecount" : 8,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 32.0, 692.5, 249.0, 129.0 ],
+									"patching_rect" : [ 32.0, 692.5, 253.0, 116.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 8,
 									"presentation_rect" : [ 453.25, 542.0, 253.0, 116.0 ],
-									"text" : ";\rcmd /all sample path ../../samples/002static;\rcmd /all noise sensor 2;\rcmd /all leds hue 0.09;\rcmd /all leds sat 1;\rcmd /all leds sequence read seq/leds/breathe;\rcmd /all leds sequence go;\rcmd /all 1 50"
+									"text" : ";\rcmd /all sample path ../../samples/002static;\rcmd /all noise sensor 2;\rcmd /all leds hue 0.09;\rcmd /all leds sat 1;\rcmd /all leds sequence read seq/leds/breathe;\rcmd /all leds sequence go;\rcmd /all 1 8"
 								}
 
 							}
@@ -1372,7 +1398,7 @@
 					"patching_rect" : [ 391.0, 739.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 434.0, 94.0, 229.0, 24.0 ],
-					"text" : "/all gain 0.464567",
+					"text" : "/all gain 0.",
 					"wordwrap" : 0
 				}
 
