@@ -204,25 +204,13 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-16",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 172.0, 686.5, 29.5, 36.0 ],
-									"text" : ";\r"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-15",
 									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 172.0, 632.5, 108.0, 49.0 ],
+									"patching_rect" : [ 172.0, 648.0, 108.0, 49.0 ],
 									"presentation_linecount" : 2,
 									"text" : ";\rcmd /all leds sat 1;\r"
 								}
@@ -578,24 +566,11 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-288",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 308.0, 760.0, 150.0, 20.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 720.0, 606.0, 81.0, 20.0 ],
-									"text" : "leds breathe"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-282",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 308.0, 722.0, 150.0, 20.0 ],
+									"patching_rect" : [ 307.0, 767.0, 150.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 716.25, 568.0, 150.0, 20.0 ],
 									"text" : "static and alive"
@@ -1479,7 +1454,7 @@
 					"patching_rect" : [ 391.0, 739.0, 362.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 436.0, 101.0, 229.0, 24.0 ],
-					"text" : "/all leds hue 0.01",
+					"text" : "/all 1 8",
 					"wordwrap" : 0
 				}
 
